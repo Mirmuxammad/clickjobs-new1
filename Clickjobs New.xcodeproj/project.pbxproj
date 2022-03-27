@@ -57,12 +57,92 @@
 		9468669F27F0735B005DDE17 /* Clickjobs New */ = {
 			isa = PBXGroup;
 			children = (
+				946866BD27F075CE005DDE17 /* Ilhom */,
+				946866BC27F075C6005DDE17 /* Sherzod */,
+				946866BB27F075C0005DDE17 /* Bahodir */,
+				946866BA27F075BA005DDE17 /* Shotilla */,
+				946866B927F075B2005DDE17 /* Muslimbek */,
+				946866B827F075A5005DDE17 /* Jahongir */,
+				946866B727F0759F005DDE17 /* Humoyun */,
+				946866B627F07579005DDE17 /* Siroj */,
+				946866B527F07570005DDE17 /* Mirmuhammad */,
+				946866B427F0755E005DDE17 /* Mavlon */,
 				946866A027F0735B005DDE17 /* AppDelegate.swift */,
 				946866A927F0735C005DDE17 /* Assets.xcassets */,
 				946866AB27F0735C005DDE17 /* LaunchScreen.storyboard */,
 				946866AE27F0735C005DDE17 /* Info.plist */,
 			);
 			path = "Clickjobs New";
+			sourceTree = "<group>";
+		};
+		946866B427F0755E005DDE17 /* Mavlon */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mavlon;
+			sourceTree = "<group>";
+		};
+		946866B527F07570005DDE17 /* Mirmuhammad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mirmuhammad;
+			sourceTree = "<group>";
+		};
+		946866B627F07579005DDE17 /* Siroj */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Siroj;
+			sourceTree = "<group>";
+		};
+		946866B727F0759F005DDE17 /* Humoyun */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Humoyun;
+			sourceTree = "<group>";
+		};
+		946866B827F075A5005DDE17 /* Jahongir */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Jahongir;
+			sourceTree = "<group>";
+		};
+		946866B927F075B2005DDE17 /* Muslimbek */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Muslimbek;
+			sourceTree = "<group>";
+		};
+		946866BA27F075BA005DDE17 /* Shotilla */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Shotilla;
+			sourceTree = "<group>";
+		};
+		946866BB27F075C0005DDE17 /* Bahodir */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Bahodir;
+			sourceTree = "<group>";
+		};
+		946866BC27F075C6005DDE17 /* Sherzod */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sherzod;
+			sourceTree = "<group>";
+		};
+		946866BD27F075CE005DDE17 /* Ilhom */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Ilhom;
 			sourceTree = "<group>";
 		};
 		C9EADFEB8D854AC0CD645A1E /* Frameworks */ = {
