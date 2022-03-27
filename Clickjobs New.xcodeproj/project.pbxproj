@@ -11,6 +11,12 @@
 		946866AA27F0735C005DDE17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 946866A927F0735C005DDE17 /* Assets.xcassets */; };
 		946866AD27F0735C005DDE17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 946866AB27F0735C005DDE17 /* LaunchScreen.storyboard */; };
 		B7B0EB6B8A05129DB0E6FCD5 /* Pods_Clickjobs_New.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92DE3BBA8F5AB0EF5ADC76B3 /* Pods_Clickjobs_New.framework */; };
+		EEF1062C27F07F4E00C7F8D7 /* VcancyTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF1062627F07F4E00C7F8D7 /* VcancyTVC.swift */; };
+		EEF1062D27F07F4E00C7F8D7 /* VcancyTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEF1062727F07F4E00C7F8D7 /* VcancyTVC.xib */; };
+		EEF1062E27F07F4E00C7F8D7 /* ProfileSettigsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF1062827F07F4E00C7F8D7 /* ProfileSettigsVC.swift */; };
+		EEF1062F27F07F4E00C7F8D7 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF1062927F07F4E00C7F8D7 /* ProfileVC.swift */; };
+		EEF1063027F07F4E00C7F8D7 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEF1062A27F07F4E00C7F8D7 /* ProfileVC.xib */; };
+		EEF1063127F07F4E00C7F8D7 /* ProfileSettigsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEF1062B27F07F4E00C7F8D7 /* ProfileSettigsVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		946866AE27F0735C005DDE17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A57B50C32F07D162D2FBFAFE /* Pods-Clickjobs New.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clickjobs New.release.xcconfig"; path = "Target Support Files/Pods-Clickjobs New/Pods-Clickjobs New.release.xcconfig"; sourceTree = "<group>"; };
 		A697295CF21E15089DCDE860 /* Pods-Clickjobs New.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clickjobs New.debug.xcconfig"; path = "Target Support Files/Pods-Clickjobs New/Pods-Clickjobs New.debug.xcconfig"; sourceTree = "<group>"; };
+		EEF1062627F07F4E00C7F8D7 /* VcancyTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VcancyTVC.swift; sourceTree = "<group>"; };
+		EEF1062727F07F4E00C7F8D7 /* VcancyTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VcancyTVC.xib; sourceTree = "<group>"; };
+		EEF1062827F07F4E00C7F8D7 /* ProfileSettigsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileSettigsVC.swift; sourceTree = "<group>"; };
+		EEF1062927F07F4E00C7F8D7 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		EEF1062A27F07F4E00C7F8D7 /* ProfileVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
+		EEF1062B27F07F4E00C7F8D7 /* ProfileSettigsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileSettigsVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +69,7 @@
 		9468669F27F0735B005DDE17 /* Clickjobs New */ = {
 			isa = PBXGroup;
 			children = (
-				946866BD27F075CE005DDE17 /* Ilhom */,
+				EEF1062527F07F2A00C7F8D7 /* Ilhom */,
 				946866BC27F075C6005DDE17 /* Sherzod */,
 				946866BB27F075C0005DDE17 /* Bahodir */,
 				946866BA27F075BA005DDE17 /* Shotilla */,
@@ -138,13 +150,6 @@
 			path = Sherzod;
 			sourceTree = "<group>";
 		};
-		946866BD27F075CE005DDE17 /* Ilhom */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Ilhom;
-			sourceTree = "<group>";
-		};
 		C9EADFEB8D854AC0CD645A1E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +165,19 @@
 				A57B50C32F07D162D2FBFAFE /* Pods-Clickjobs New.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		EEF1062527F07F2A00C7F8D7 /* Ilhom */ = {
+			isa = PBXGroup;
+			children = (
+				EEF1062827F07F4E00C7F8D7 /* ProfileSettigsVC.swift */,
+				EEF1062B27F07F4E00C7F8D7 /* ProfileSettigsVC.xib */,
+				EEF1062927F07F4E00C7F8D7 /* ProfileVC.swift */,
+				EEF1062A27F07F4E00C7F8D7 /* ProfileVC.xib */,
+				EEF1062627F07F4E00C7F8D7 /* VcancyTVC.swift */,
+				EEF1062727F07F4E00C7F8D7 /* VcancyTVC.xib */,
+			);
+			path = Ilhom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,7 +240,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEF1063027F07F4E00C7F8D7 /* ProfileVC.xib in Resources */,
+				EEF1062D27F07F4E00C7F8D7 /* VcancyTVC.xib in Resources */,
 				946866AD27F0735C005DDE17 /* LaunchScreen.storyboard in Resources */,
+				EEF1063127F07F4E00C7F8D7 /* ProfileSettigsVC.xib in Resources */,
 				946866AA27F0735C005DDE17 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,7 +297,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEF1062F27F07F4E00C7F8D7 /* ProfileVC.swift in Sources */,
 				946866A127F0735B005DDE17 /* AppDelegate.swift in Sources */,
+				EEF1062E27F07F4E00C7F8D7 /* ProfileSettigsVC.swift in Sources */,
+				EEF1062C27F07F4E00C7F8D7 /* VcancyTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
