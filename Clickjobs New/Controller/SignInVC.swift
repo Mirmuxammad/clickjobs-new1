@@ -18,6 +18,8 @@ class SignInVC: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     
     
+    var isEmployer: Bool = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setNavigation()
@@ -31,10 +33,9 @@ class SignInVC: UIViewController {
     
     
 
-    
-    
-
 }
+
+
 
 
 //MARK: - KEYBOARD METHODS

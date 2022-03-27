@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainTBC: UITabBarController {
+class EmployeeMainTBC: UITabBarController {
 
     
     override func viewDidLoad() {

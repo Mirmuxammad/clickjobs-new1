@@ -4,8 +4,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -66,7 +66,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" name="defaultGray"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="Ny1-qQ-2nb"/>
                                             <constraint firstAttribute="trailing" secondItem="yDg-jW-Ic4" secondAttribute="trailing" constant="20" id="ezg-bc-cl4"/>
@@ -85,7 +85,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" name="defaultGray"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="Xsh-tZ-K1W" secondAttribute="bottom" constant="5" id="0eM-Ts-9tr"/>
                                             <constraint firstAttribute="trailing" secondItem="Xsh-tZ-K1W" secondAttribute="trailing" constant="20" id="dqb-8j-MjJ"/>
@@ -102,7 +102,7 @@
                                         <rect key="frame" x="18" y="21" width="31" height="26"/>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" name="defaultGray"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="2xZ-BQ-lRa" secondAttribute="trailing" constant="18" id="AmU-BB-NmY"/>
                                     <constraint firstAttribute="height" constant="67" id="WVi-j0-lkl"/>
@@ -113,7 +113,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="defaultGray"/>
                         <constraints>
                             <constraint firstItem="vBY-MP-7vy" firstAttribute="top" secondItem="oR1-fz-GGU" secondAttribute="bottom" constant="16" id="1Iq-xk-qr6"/>
                             <constraint firstItem="fcV-fq-Gfj" firstAttribute="leading" secondItem="bSF-BJ-VbD" secondAttribute="leading" constant="16" id="5fF-9K-VM5"/>
@@ -133,7 +133,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
-                <color key="backgroundColor" red="0.92156862745098034" green="0.92549019607843142" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <color key="backgroundColor" name="defaultGray"/>
                 <constraints>
                     <constraint firstItem="bSF-BJ-VbD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Ch4-Yc-C6R"/>
                     <constraint firstItem="bSF-BJ-VbD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="FeZ-iw-yfa"/>
@@ -158,8 +158,8 @@
         </tableViewCell>
     </objects>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <namedColor name="defaultGray">
+            <color red="0.89800000190734863" green="0.89800000190734863" blue="0.89800000190734863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

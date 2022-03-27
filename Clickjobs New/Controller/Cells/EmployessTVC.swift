@@ -44,5 +44,16 @@ class EmployessTVC: UITableViewCell {
         
     }
     
+    
+    
+    func update(data: Vacancy) {
+        nameLbl.text = data.title
+        locationLbl.text = data.workAddress
+        jobTypeFirst.text = data.jobTag
+        experienceLbl.text = data.salary
+        jobTypeSecond.isHidden = true
+    }
+    
+    
 }
 

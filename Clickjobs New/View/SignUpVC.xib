@@ -66,6 +66,9 @@
                                     <integer key="value" value="10"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="loginBtnPressed:" destination="-1" eventType="touchUpInside" id="SIr-or-Kse"/>
+                            </connections>
                         </button>
                     </subviews>
                 </stackView>

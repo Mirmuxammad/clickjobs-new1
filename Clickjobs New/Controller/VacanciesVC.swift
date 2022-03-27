@@ -8,25 +8,29 @@
 import UIKit
 
 class VacanciesVC: UIViewController {
-    @IBOutlet weak var barView: UIView! {
-        didSet {
-            barView.backgroundColor = UIColor(named: "Solid")
-        }
-    }
+    
+
     @IBOutlet weak var tableView: UITableView! {
         didSet {
             tableView.delegate = self
             tableView.dataSource = self
-            tableView.register(UINib(nibName: "VacanciesTVC", bundle: nil), forCellReuseIdentifier: "VacanciesTVC")
+            tableView.register(UINib(nibName: "EmployessTVC", bundle: nil), forCellReuseIdentifier: "EmployessTVC")
         }
     }
     
     
-    var vacancies: [String] = ["","","","","","","","","","","",""]
+    var vacancies: [Vacancy] = []
+    
     let searchController = UISearchController(searchResultsController: nil)
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        Fire.shared.getVacancyies { newVacs in
+            self.vacancies = newVacs
+            self.tableView.reloadData()
+        }
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -35,7 +39,7 @@ class VacanciesVC: UIViewController {
 
     }
     
-    @objc func addTapped(sender: UIBarButtonItem) {
+    @objc func filterTapped(sender: UIBarButtonItem) {
         
     }
 
@@ -50,20 +54,22 @@ extension VacanciesVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "EmployessTVC", for: indexPath) as? EmployessTVC else { return UITableViewCell() }
-        
+        cell.update(data: self.vacancies[indexPath.row])
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        let vc = VacanciesDesVC.init(nibName: "VacanciesDesVC", bundle: nil)
-        
-        self.hidesBottomBarWhenPushed = true
-        navigationController?.pushViewController(vc, animated: true)
-        self.hidesBottomBarWhenPushed = false
+//
+//        let vc = VacanciesDesVC.init(nibName: "VacanciesDesVC", bundle: nil)
+//
+//        self.hidesBottomBarWhenPushed = true
+//        navigationController?.pushViewController(vc, animated: true)
+//        self.hidesBottomBarWhenPushed = false
     }
+    
+    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        self.navigationController?.navigationBar.barTintColor = UIColor(named: "Solid")
+        self.navigationController?.navigationBar.barTintColor = .defaultGray
     }
     
 }
@@ -71,7 +77,7 @@ extension VacanciesVC: UITableViewDelegate, UITableViewDataSource {
 extension VacanciesVC {
     func setNavBar() {
         
-        view.backgroundColor = UIColor(named: "Solid")
+        view.backgroundColor = .defaultGray
         
         title = "Vacancies"
         
@@ -84,8 +90,8 @@ extension VacanciesVC {
         navigationItem.hidesSearchBarWhenScrolling = false
         navigationItem.searchController = searchController
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Filter", style: .plain, target: self, action: #selector(addTapped))
-        navigationItem.rightBarButtonItem?.tintColor = UIColor(named: "redColor")
-        navigationItem.backBarButtonItem?.tintColor = UIColor(named: "redColor")
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Filter", style: .plain, target: self, action: #selector(filterTapped(sender:)))
+        navigationItem.rightBarButtonItem?.tintColor = .btnRed
+        navigationItem.backBarButtonItem?.tintColor = .btnRed
     }
 }
