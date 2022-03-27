@@ -11,6 +11,11 @@
 		946866AA27F0735C005DDE17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 946866A927F0735C005DDE17 /* Assets.xcassets */; };
 		946866AD27F0735C005DDE17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 946866AB27F0735C005DDE17 /* LaunchScreen.storyboard */; };
 		B7B0EB6B8A05129DB0E6FCD5 /* Pods_Clickjobs_New.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92DE3BBA8F5AB0EF5ADC76B3 /* Pods_Clickjobs_New.framework */; };
+		FADA0E9B27F0792A00504210 /* ResumeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA0E9727F0792A00504210 /* ResumeVC.swift */; };
+		FADA0E9C27F0792A00504210 /* ResumeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FADA0E9827F0792A00504210 /* ResumeVC.xib */; };
+		FADA0E9D27F0792A00504210 /* PersonalDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA0E9927F0792A00504210 /* PersonalDataVC.swift */; };
+		FADA0E9E27F0792A00504210 /* PersonalDataVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FADA0E9A27F0792A00504210 /* PersonalDataVC.xib */; };
+		FADA0EA027F07AF100504210 /* CustomClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA0E9F27F07AF100504210 /* CustomClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		946866AE27F0735C005DDE17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A57B50C32F07D162D2FBFAFE /* Pods-Clickjobs New.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clickjobs New.release.xcconfig"; path = "Target Support Files/Pods-Clickjobs New/Pods-Clickjobs New.release.xcconfig"; sourceTree = "<group>"; };
 		A697295CF21E15089DCDE860 /* Pods-Clickjobs New.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clickjobs New.debug.xcconfig"; path = "Target Support Files/Pods-Clickjobs New/Pods-Clickjobs New.debug.xcconfig"; sourceTree = "<group>"; };
+		FADA0E9727F0792A00504210 /* ResumeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResumeVC.swift; sourceTree = "<group>"; };
+		FADA0E9827F0792A00504210 /* ResumeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResumeVC.xib; sourceTree = "<group>"; };
+		FADA0E9927F0792A00504210 /* PersonalDataVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalDataVC.swift; sourceTree = "<group>"; };
+		FADA0E9A27F0792A00504210 /* PersonalDataVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalDataVC.xib; sourceTree = "<group>"; };
+		FADA0E9F27F07AF100504210 /* CustomClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,11 +67,11 @@
 		9468669F27F0735B005DDE17 /* Clickjobs New */ = {
 			isa = PBXGroup;
 			children = (
+				FADA0E9627F078C000504210 /* Muslimbek */,
 				946866BD27F075CE005DDE17 /* Ilhom */,
 				946866BC27F075C6005DDE17 /* Sherzod */,
 				946866BB27F075C0005DDE17 /* Bahodir */,
 				946866BA27F075BA005DDE17 /* Shotilla */,
-				946866B927F075B2005DDE17 /* Muslimbek */,
 				946866B827F075A5005DDE17 /* Jahongir */,
 				946866B727F0759F005DDE17 /* Humoyun */,
 				946866B627F07579005DDE17 /* Siroj */,
@@ -110,13 +120,6 @@
 			path = Jahongir;
 			sourceTree = "<group>";
 		};
-		946866B927F075B2005DDE17 /* Muslimbek */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Muslimbek;
-			sourceTree = "<group>";
-		};
 		946866BA27F075BA005DDE17 /* Shotilla */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +163,18 @@
 				A57B50C32F07D162D2FBFAFE /* Pods-Clickjobs New.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		FADA0E9627F078C000504210 /* Muslimbek */ = {
+			isa = PBXGroup;
+			children = (
+				FADA0E9F27F07AF100504210 /* CustomClass.swift */,
+				FADA0E9927F0792A00504210 /* PersonalDataVC.swift */,
+				FADA0E9A27F0792A00504210 /* PersonalDataVC.xib */,
+				FADA0E9727F0792A00504210 /* ResumeVC.swift */,
+				FADA0E9827F0792A00504210 /* ResumeVC.xib */,
+			);
+			path = Muslimbek;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +239,8 @@
 			files = (
 				946866AD27F0735C005DDE17 /* LaunchScreen.storyboard in Resources */,
 				946866AA27F0735C005DDE17 /* Assets.xcassets in Resources */,
+				FADA0E9E27F0792A00504210 /* PersonalDataVC.xib in Resources */,
+				FADA0E9C27F0792A00504210 /* ResumeVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +293,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FADA0E9D27F0792A00504210 /* PersonalDataVC.swift in Sources */,
+				FADA0EA027F07AF100504210 /* CustomClass.swift in Sources */,
 				946866A127F0735B005DDE17 /* AppDelegate.swift in Sources */,
+				FADA0E9B27F0792A00504210 /* ResumeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

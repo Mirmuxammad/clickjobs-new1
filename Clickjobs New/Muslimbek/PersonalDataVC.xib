@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PersonalDataVC" customModule="ClickJobs" customModuleProvider="target">
+            <connections>
+                <outlet property="cityView" destination="idb-kQ-AIx" id="HB7-Wg-deL"/>
+                <outlet property="emailView" destination="iRu-U8-Hxs" id="RnP-jb-wfE"/>
+                <outlet property="jobView" destination="QBy-aw-VXx" id="uep-1e-0bA"/>
+                <outlet property="nameView" destination="fVc-oP-RsJ" id="nbP-j4-NGB"/>
+                <outlet property="numberView" destination="LAn-X3-8Mv" id="G0J-C1-v3n"/>
+                <outlet property="usernameView" destination="p9B-hA-sTa" id="jXG-7o-r07"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="1rv-U0-oMP">
+                    <rect key="frame" x="16" y="80" width="382" height="393"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fVc-oP-RsJ" customClass="SSNeumorphicView" customModule="SSNeumorphicView">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="53"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Muslimbek Turgunov" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ll3-Ye-9jU">
+                                    <rect key="frame" x="18" y="18" width="138" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                    <color key="textColor" red="0.6705883145" green="0.67058825489999996" blue="0.67058825489999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="ll3-Ye-9jU" firstAttribute="centerY" secondItem="fVc-oP-RsJ" secondAttribute="centerY" id="1uH-Ts-D75"/>
+                                <constraint firstAttribute="height" constant="53" id="4vY-C9-b4a"/>
+                                <constraint firstItem="ll3-Ye-9jU" firstAttribute="leading" secondItem="fVc-oP-RsJ" secondAttribute="leading" constant="18" id="nPV-0l-Fci"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QBy-aw-VXx" customClass="SSNeumorphicView" customModule="SSNeumorphicView">
+                            <rect key="frame" x="0.0" y="68" width="382" height="53"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS Developer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TdD-0y-Zpy">
+                                    <rect key="frame" x="18" y="18" width="94.5" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                    <color key="textColor" red="0.6705883145" green="0.67058825489999996" blue="0.67058825489999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="TdD-0y-Zpy" firstAttribute="centerY" secondItem="QBy-aw-VXx" secondAttribute="centerY" id="5bT-jP-sDu"/>
+                                <constraint firstItem="TdD-0y-Zpy" firstAttribute="leading" secondItem="QBy-aw-VXx" secondAttribute="leading" constant="18" id="NYe-HV-qqT"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="idb-kQ-AIx" customClass="SSNeumorphicView" customModule="SSNeumorphicView">
+                            <rect key="frame" x="0.0" y="136" width="382" height="53"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toshkent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1s-gT-o9A">
+                                    <rect key="frame" x="18" y="18" width="60.5" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                    <color key="textColor" red="0.6705883145" green="0.67058825489999996" blue="0.67058825489999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="Q1s-gT-o9A" firstAttribute="leading" secondItem="idb-kQ-AIx" secondAttribute="leading" constant="18" id="9S7-7B-49X"/>
+                                <constraint firstItem="Q1s-gT-o9A" firstAttribute="centerY" secondItem="idb-kQ-AIx" secondAttribute="centerY" id="F8L-WW-rqd"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LAn-X3-8Mv" customClass="SSNeumorphicView" customModule="SSNeumorphicView">
+                            <rect key="frame" x="0.0" y="204" width="382" height="53"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+998 93 565 10 95" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fgs-0h-1dZ">
+                                    <rect key="frame" x="18" y="18" width="128.5" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                    <color key="textColor" red="0.6705883145" green="0.67058825489999996" blue="0.67058825489999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="Fgs-0h-1dZ" firstAttribute="centerY" secondItem="LAn-X3-8Mv" secondAttribute="centerY" id="HIq-iP-VP2"/>
+                                <constraint firstItem="Fgs-0h-1dZ" firstAttribute="leading" secondItem="LAn-X3-8Mv" secondAttribute="leading" constant="18" id="Kac-4S-bPi"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p9B-hA-sTa" customClass="SSNeumorphicView" customModule="SSNeumorphicView">
+                            <rect key="frame" x="0.0" y="272" width="382" height="53"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Muslimbek" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjO-zb-Wku">
+                                    <rect key="frame" x="18" y="18" width="72" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                    <color key="textColor" red="0.6705883145" green="0.67058825489999996" blue="0.67058825489999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="wjO-zb-Wku" firstAttribute="centerY" secondItem="p9B-hA-sTa" secondAttribute="centerY" id="dHd-rt-F7c"/>
+                                <constraint firstItem="wjO-zb-Wku" firstAttribute="leading" secondItem="p9B-hA-sTa" secondAttribute="leading" constant="18" id="yIL-tj-E2g"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iRu-U8-Hxs" customClass="SSNeumorphicView" customModule="SSNeumorphicView">
+                            <rect key="frame" x="0.0" y="340" width="382" height="53"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="turgunovmuslimbek@mail.ru" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="McT-F4-vTG">
+                                    <rect key="frame" x="18" y="18" width="189.5" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                    <color key="textColor" red="0.6705883145" green="0.67058825489999996" blue="0.67058825489999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="McT-F4-vTG" firstAttribute="centerY" secondItem="iRu-U8-Hxs" secondAttribute="centerY" id="jDw-cN-NWt"/>
+                                <constraint firstItem="McT-F4-vTG" firstAttribute="leading" secondItem="iRu-U8-Hxs" secondAttribute="leading" constant="18" id="tfq-i2-nh0"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OfR-zF-08w">
+                    <rect key="frame" x="16" y="513" width="382" height="53"/>
+                    <color key="backgroundColor" red="0.85558915140000003" green="0.3340352774" blue="0.32546454670000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="53" id="3Qc-2e-VwL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Save changes">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.92176002260000001" green="0.92523568869999995" blue="0.94117885830000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1rv-U0-oMP" secondAttribute="trailing" constant="16" id="13S-mJ-Yg5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="OfR-zF-08w" secondAttribute="trailing" constant="16" id="3rR-7b-nmK"/>
+                <constraint firstItem="OfR-zF-08w" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="4Tc-GW-8Qh"/>
+                <constraint firstItem="OfR-zF-08w" firstAttribute="top" secondItem="1rv-U0-oMP" secondAttribute="bottom" constant="40" id="PF3-Oy-YZc"/>
+                <constraint firstItem="1rv-U0-oMP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="SqJ-e3-71R"/>
+                <constraint firstItem="1rv-U0-oMP" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="36" id="swD-Pc-q25"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="98.4375"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
