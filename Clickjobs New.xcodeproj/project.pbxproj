@@ -103,20 +103,12 @@
 				946866B727F0759F005DDE17 /* Humoyun */,
 				946866B627F07579005DDE17 /* Siroj */,
 				946866B527F07570005DDE17 /* Mirmuhammad */,
-				946866B427F0755E005DDE17 /* Mavlon */,
 				946866A027F0735B005DDE17 /* AppDelegate.swift */,
 				946866A927F0735C005DDE17 /* Assets.xcassets */,
 				946866AB27F0735C005DDE17 /* LaunchScreen.storyboard */,
 				946866AE27F0735C005DDE17 /* Info.plist */,
 			);
 			path = "Clickjobs New";
-			sourceTree = "<group>";
-		};
-		946866B427F0755E005DDE17 /* Mavlon */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Mavlon;
 			sourceTree = "<group>";
 		};
 		946866B527F07570005DDE17 /* Mirmuhammad */ = {
