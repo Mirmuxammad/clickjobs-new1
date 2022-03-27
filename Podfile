@@ -3,10 +3,6 @@
 target 'Clickjobs New' do
   use_frameworks!
 
-
    pod 'SSNeumorphicView'
-
-
-
 
 end
