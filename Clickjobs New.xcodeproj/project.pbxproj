@@ -154,13 +154,6 @@
 			path = Sherzod;
 			sourceTree = "<group>";
 		};
-		946866BD27F075CE005DDE17 /* Ilhom */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Ilhom;
-			sourceTree = "<group>";
-		};
 		C9EADFEB8D854AC0CD645A1E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
