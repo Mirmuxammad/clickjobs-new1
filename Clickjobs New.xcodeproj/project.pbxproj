@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C2245E827F079080024D475 /* JobCatgory.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C2245E427F079080024D475 /* JobCatgory.xib */; };
+		0C2245E927F079080024D475 /* JobExpertise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2245E527F079080024D475 /* JobExpertise.swift */; };
+		0C2245EA27F079080024D475 /* JobCatgory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2245E627F079080024D475 /* JobCatgory.swift */; };
+		0C2245EB27F079080024D475 /* JobExpertise.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C2245E727F079080024D475 /* JobExpertise.xib */; };
 		946866A127F0735B005DDE17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946866A027F0735B005DDE17 /* AppDelegate.swift */; };
 		946866AA27F0735C005DDE17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 946866A927F0735C005DDE17 /* Assets.xcassets */; };
 		946866AD27F0735C005DDE17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 946866AB27F0735C005DDE17 /* LaunchScreen.storyboard */; };
@@ -14,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C2245E427F079080024D475 /* JobCatgory.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JobCatgory.xib; path = ../../../../Desktop/ClickJobs/ClickJobs/JobCatgory.xib; sourceTree = "<group>"; };
+		0C2245E527F079080024D475 /* JobExpertise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobExpertise.swift; path = ../../../../Desktop/ClickJobs/ClickJobs/JobExpertise.swift; sourceTree = "<group>"; };
+		0C2245E627F079080024D475 /* JobCatgory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobCatgory.swift; path = ../../../../Desktop/ClickJobs/ClickJobs/JobCatgory.swift; sourceTree = "<group>"; };
+		0C2245E727F079080024D475 /* JobExpertise.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JobExpertise.xib; path = ../../../../Desktop/ClickJobs/ClickJobs/JobExpertise.xib; sourceTree = "<group>"; };
 		92DE3BBA8F5AB0EF5ADC76B3 /* Pods_Clickjobs_New.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clickjobs_New.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9468669D27F0735B005DDE17 /* Clickjobs New.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clickjobs New.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		946866A027F0735B005DDE17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +44,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C2245E327F078C40024D475 /* Humoyun */ = {
+			isa = PBXGroup;
+			children = (
+				0C2245E627F079080024D475 /* JobCatgory.swift */,
+				0C2245E427F079080024D475 /* JobCatgory.xib */,
+				0C2245E527F079080024D475 /* JobExpertise.swift */,
+				0C2245E727F079080024D475 /* JobExpertise.xib */,
+			);
+			path = Humoyun;
+			sourceTree = "<group>";
+		};
 		9468669427F0735A005DDE17 = {
 			isa = PBXGroup;
 			children = (
@@ -57,13 +76,13 @@
 		9468669F27F0735B005DDE17 /* Clickjobs New */ = {
 			isa = PBXGroup;
 			children = (
+				0C2245E327F078C40024D475 /* Humoyun */,
 				946866BD27F075CE005DDE17 /* Ilhom */,
 				946866BC27F075C6005DDE17 /* Sherzod */,
 				946866BB27F075C0005DDE17 /* Bahodir */,
 				946866BA27F075BA005DDE17 /* Shotilla */,
 				946866B927F075B2005DDE17 /* Muslimbek */,
 				946866B827F075A5005DDE17 /* Jahongir */,
-				946866B727F0759F005DDE17 /* Humoyun */,
 				946866B627F07579005DDE17 /* Siroj */,
 				946866B527F07570005DDE17 /* Mirmuhammad */,
 				946866B427F0755E005DDE17 /* Mavlon */,
@@ -94,13 +113,6 @@
 			children = (
 			);
 			path = Siroj;
-			sourceTree = "<group>";
-		};
-		946866B727F0759F005DDE17 /* Humoyun */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Humoyun;
 			sourceTree = "<group>";
 		};
 		946866B827F075A5005DDE17 /* Jahongir */ = {
@@ -223,7 +235,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				946866AD27F0735C005DDE17 /* LaunchScreen.storyboard in Resources */,
+				0C2245EB27F079080024D475 /* JobExpertise.xib in Resources */,
 				946866AA27F0735C005DDE17 /* Assets.xcassets in Resources */,
+				0C2245E827F079080024D475 /* JobCatgory.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +291,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				946866A127F0735B005DDE17 /* AppDelegate.swift in Sources */,
+				0C2245E927F079080024D475 /* JobExpertise.swift in Sources */,
+				0C2245EA27F079080024D475 /* JobCatgory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
