@@ -15,7 +15,7 @@ class EmployessVC: UIViewController {
             tableView.delegate = self
             tableView.dataSource = self
             tableView.register(UINib(nibName: "EmployessTVC", bundle: nil), forCellReuseIdentifier: "EmployessTVC")
-            tableView.backgroundColor = bodyColor
+            tableView.backgroundColor = .defaultGray
             tableView.contentInset = UIEdgeInsets(top: 8, left: 0, bottom: 10, right: 0)
         }
     }
@@ -25,7 +25,7 @@ class EmployessVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = bodyColor
+        self.view.backgroundColor = .defaultGray
         setupNavBar()
         
     }
@@ -86,7 +86,7 @@ extension EmployessVC: UITableViewDelegate, UITableViewDataSource {
         } else {
             self.filterBtn.isHidden = false
         }
-        self.navigationController?.navigationBar.barTintColor = bodyColor
+        self.navigationController?.navigationBar.barTintColor = .defaultGray
     }
     
     

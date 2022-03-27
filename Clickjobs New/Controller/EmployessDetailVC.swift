@@ -26,11 +26,11 @@ class EmployessDetailVC: UIViewController {
     }
     
     func setup() {
-        self.navigationController?.navigationBar.tintColor = redColor
-        self.view.backgroundColor = bodyColor
+        self.navigationController?.navigationBar.tintColor = .btnRed
+        self.view.backgroundColor = .defaultGray
         navigationItem.largeTitleDisplayMode = .never
-        containerView.backgroundColor = bodyColor
-        self.navigationController?.navigationBar.barTintColor = bodyColor
+        containerView.backgroundColor = .defaultGray
+        self.navigationController?.navigationBar.barTintColor = .defaultGray
         scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 80, right: 0)
     }
     

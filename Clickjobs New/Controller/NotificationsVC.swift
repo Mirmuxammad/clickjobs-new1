@@ -22,14 +22,13 @@ class NotificationsVC: UIViewController {
                 i.viewNeumorphicCornerRadius = 13
                 i.viewNeumorphicShadowRadius = 0
                 i.viewNeumorphicShadowOffset = .init(width: 3, height: 2)
-                i.viewNeumorphicMainColor = UIColor(named: "solid")?.cgColor
+                i.viewNeumorphicMainColor = UIColor.defaultGray.cgColor
             }
         }
     }
     @IBOutlet var switchBtns: [UISwitch]!{
         didSet{
             for i in switchBtns{
-//                UIColor("D8D8DD")
                 i.onTintColor = .lightGray.withAlphaComponent(0.000001)
             }
         }
@@ -40,20 +39,20 @@ class NotificationsVC: UIViewController {
         super.viewDidLoad()
         title = "Notifications"
         navigationItem.backBarButtonItem?.title = "Hello"
-        self.view.backgroundColor = UIColor(named: "solid")
+        self.view.backgroundColor = .defaultGray
     }
     
     @IBAction func switchTapped(_ sender: UISwitch) {
         for i in switchBtns.enumerated(){
             if i.offset == sender.tag{
                 if i.element.isOn == true {
-                    i.element.thumbTintColor = UIColor.red.withAlphaComponent(0.8)
+                    i.element.thumbTintColor = .btnRed
                     i.element.isOn = true
 
                 }
                 else{
                    
-                    i.element.thumbTintColor = UIColor("EBECF0")
+                    i.element.thumbTintColor = .defaultGray.withAlphaComponent(20)
                     i.element.isOn = false
 
                 }

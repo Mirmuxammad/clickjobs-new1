@@ -48,8 +48,8 @@ class ResumeVC: UIViewController {
         super.viewDidLoad()
         
         navigationItem.title = "Resume"
-        self.view.backgroundColor = .clickGray
-        navigationController?.navigationBar.barTintColor = .clickGray
+        self.view.backgroundColor = .defaultGray
+        navigationController?.navigationBar.barTintColor = .defaultGray
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         
@@ -82,7 +82,7 @@ class ResumeVC: UIViewController {
         button.btnNeumorphicCornerRadius = 12
         button.btnNeumorphicDarkShadowColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.20124635)
         button.btnNeumorphicLightShadowColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.7992854845)
-        button.backgroundColor = .clickGray
+        button.backgroundColor = .defaultGray
         button.btnDepthType = .outerShadow
     }
     
@@ -92,7 +92,7 @@ class ResumeVC: UIViewController {
         vieww.viewNeumorphicCornerRadius = 12
         vieww.viewNeumorphicDarkShadowColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.1991551886)
         vieww.viewNeumorphicLightShadowColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.7981303638)
-        vieww.backgroundColor = .clickGray
+        vieww.backgroundColor = .defaultGray
         vieww.viewDepthType = .innerShadow
     }
     

@@ -32,9 +32,9 @@ class EmployessTVC: UITableViewCell {
     
     
     func setupShadow() {
-        containerView.backgroundColor = bodyColor
+        containerView.backgroundColor = .defaultGray
         for i in viewsUp {
-            i.backgroundColor = bodyColor
+            i.backgroundColor = .defaultGray
             i.viewDepthType = .innerShadow
         }
         containerView.layer.shadowColor = UIColor.systemGray2.cgColor

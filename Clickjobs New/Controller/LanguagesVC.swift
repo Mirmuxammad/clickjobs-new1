@@ -21,7 +21,7 @@ class LanguagesVC: UIViewController {
                 if i.offset == 0 {
                     i.element.setImage(UIImage(systemName: "checkmark"), for: .normal)
                     i.element.btnDepthType = .innerShadow
-                    i.element.tintColor = UIColor("ABABAB")
+                    i.element.tintColor = .systemGray5
                 }
                 else{
                     i.element.setImage(UIImage(systemName: "checkmark"), for: .normal)
@@ -35,7 +35,7 @@ class LanguagesVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Languages"
-        self.view.backgroundColor = UIColor(named: "solid")
+        self.view.backgroundColor = .defaultGray
     }
     
     
@@ -43,7 +43,7 @@ class LanguagesVC: UIViewController {
         for i in languagesBtns.enumerated(){
             if i.offset == sender.tag{
                 i.element.setImage(UIImage(systemName: "checkmark"), for: .normal)
-                i.element.tintColor = UIColor("ABABAB")
+                i.element.tintColor = .systemGray5
                 i.element.isSelected = false
                 i.element.btnDepthType = .innerShadow
             }

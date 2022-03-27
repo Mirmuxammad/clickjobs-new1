@@ -52,9 +52,7 @@ class WalkVC: UIViewController {
     
     
     @IBAction func siginTap(_ sender: UIButton) {
-        let vc =  CreateVacancyVC(nibName: "CreateVacancyVC", bundle: nil)
-        vc.modalPresentationStyle = .overFullScreen
-        self.present(vc, animated: true)
+
         
     }
     
