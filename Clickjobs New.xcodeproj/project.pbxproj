@@ -10,63 +10,38 @@
 		946866A127F0735B005DDE17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946866A027F0735B005DDE17 /* AppDelegate.swift */; };
 		946866AA27F0735C005DDE17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 946866A927F0735C005DDE17 /* Assets.xcassets */; };
 		946866AD27F0735C005DDE17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 946866AB27F0735C005DDE17 /* LaunchScreen.storyboard */; };
-		946866D127F084D4005DDE17 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946866CB27F084D3005DDE17 /* ProfileVC.swift */; };
-		946866D227F084D4005DDE17 /* VcancyTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946866CC27F084D3005DDE17 /* VcancyTVC.swift */; };
-		946866D327F084D4005DDE17 /* ProfileSettigsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 946866CD27F084D3005DDE17 /* ProfileSettigsVC.xib */; };
-		946866D427F084D4005DDE17 /* ProfileSettigsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946866CE27F084D3005DDE17 /* ProfileSettigsVC.swift */; };
-		946866D527F084D4005DDE17 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 946866CF27F084D3005DDE17 /* ProfileVC.xib */; };
-		946866D627F084D4005DDE17 /* VcancyTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 946866D027F084D3005DDE17 /* VcancyTVC.xib */; };
 		946866DC27F084FF005DDE17 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946866D827F084FF005DDE17 /* ProfileVC.swift */; };
 		946866DD27F084FF005DDE17 /* EditVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 946866D927F084FF005DDE17 /* EditVC.xib */; };
 		946866DE27F084FF005DDE17 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 946866DA27F084FF005DDE17 /* ProfileVC.xib */; };
 		946866DF27F084FF005DDE17 /* EditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946866DB27F084FF005DDE17 /* EditVC.swift */; };
-		946866E527F0850C005DDE17 /* CreateVacancyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946866E127F0850C005DDE17 /* CreateVacancyVC.swift */; };
-		946866E627F0850C005DDE17 /* EmployeeDescriptionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 946866E227F0850C005DDE17 /* EmployeeDescriptionVC.xib */; };
-		946866E727F0850C005DDE17 /* EmployeeDescriptionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946866E327F0850C005DDE17 /* EmployeeDescriptionVC.swift */; };
-		946866E827F0850C005DDE17 /* CreateVacancyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 946866E427F0850C005DDE17 /* CreateVacancyVC.xib */; };
 		946866F127F08512005DDE17 /* MainTBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946866EA27F08512005DDE17 /* MainTBC.swift */; };
 		946866F227F08512005DDE17 /* VacanciesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 946866EB27F08512005DDE17 /* VacanciesVC.xib */; };
 		946866F327F08512005DDE17 /* VacanciesDesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 946866EC27F08512005DDE17 /* VacanciesDesVC.xib */; };
 		946866F427F08512005DDE17 /* VacanciesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946866ED27F08512005DDE17 /* VacanciesVC.swift */; };
-		946866F527F08512005DDE17 /* VacanciesTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946866EE27F08512005DDE17 /* VacanciesTVC.swift */; };
 		946866F627F08512005DDE17 /* VacanciesDesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946866EF27F08512005DDE17 /* VacanciesDesVC.swift */; };
-		946866F727F08512005DDE17 /* VacanciesTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 946866F027F08512005DDE17 /* VacanciesTVC.xib */; };
-		946866FE27F08519005DDE17 /* CustomClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946866F927F08519005DDE17 /* CustomClass.swift */; };
 		946866FF27F08519005DDE17 /* ResumeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946866FA27F08519005DDE17 /* ResumeVC.swift */; };
-		9468670027F08519005DDE17 /* PersonalDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946866FB27F08519005DDE17 /* PersonalDataVC.swift */; };
-		9468670127F08519005DDE17 /* PersonalDataVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 946866FC27F08519005DDE17 /* PersonalDataVC.xib */; };
 		9468670227F08519005DDE17 /* ResumeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 946866FD27F08519005DDE17 /* ResumeVC.xib */; };
-		9468670F27F08520005DDE17 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9468670427F08520005DDE17 /* ProfileVC.swift */; };
 		9468671027F08520005DDE17 /* EmployessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9468670527F08520005DDE17 /* EmployessVC.swift */; };
 		9468671127F08520005DDE17 /* EmployessTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9468670627F08520005DDE17 /* EmployessTVC.xib */; };
-		9468671227F08520005DDE17 /* VacancyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9468670727F08520005DDE17 /* VacancyVC.swift */; };
-		9468671327F08520005DDE17 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9468670827F08520005DDE17 /* ProfileVC.xib */; };
 		9468671427F08520005DDE17 /* EmployessDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9468670927F08520005DDE17 /* EmployessDetailVC.swift */; };
-		9468671527F08520005DDE17 /* VacancyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9468670A27F08520005DDE17 /* VacancyVC.xib */; };
-		9468671627F08520005DDE17 /* MainTabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9468670B27F08520005DDE17 /* MainTabbarVC.swift */; };
 		9468671727F08520005DDE17 /* EmployessDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9468670C27F08520005DDE17 /* EmployessDetailVC.xib */; };
 		9468671827F08520005DDE17 /* EmployessTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9468670D27F08520005DDE17 /* EmployessTVC.swift */; };
 		9468671927F08520005DDE17 /* EmployessVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9468670E27F08520005DDE17 /* EmployessVC.xib */; };
-		9468671F27F08527005DDE17 /* ProfileSettingsPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9468671B27F08527005DDE17 /* ProfileSettingsPasswordVC.xib */; };
-		9468672027F08527005DDE17 /* ProfileSettingsPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9468671C27F08527005DDE17 /* ProfileSettingsPasswordVC.swift */; };
-		9468672127F08527005DDE17 /* ProfileSettingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9468671D27F08527005DDE17 /* ProfileSettingVC.xib */; };
-		9468672227F08527005DDE17 /* ProfileSettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9468671E27F08527005DDE17 /* ProfileSettingVC.swift */; };
 		9468672A27F0852E005DDE17 /* WalkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9468672427F0852E005DDE17 /* WalkVC.swift */; };
 		9468672B27F0852E005DDE17 /* WalkVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9468672527F0852E005DDE17 /* WalkVC.xib */; };
-		9468672C27F0852E005DDE17 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9468672627F0852E005DDE17 /* LoginVC.swift */; };
-		9468672D27F0852E005DDE17 /* SiginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9468672727F0852E005DDE17 /* SiginVC.swift */; };
-		9468672E27F0852E005DDE17 /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9468672827F0852E005DDE17 /* LoginVC.xib */; };
-		9468672F27F0852E005DDE17 /* SiginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9468672927F0852E005DDE17 /* SiginVC.xib */; };
-		9468673527F0858C005DDE17 /* JobCatgory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9468673127F0858C005DDE17 /* JobCatgory.swift */; };
-		9468673627F0858C005DDE17 /* JobExpertise.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9468673227F0858C005DDE17 /* JobExpertise.xib */; };
-		9468673727F0858C005DDE17 /* JobCatgory.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9468673327F0858C005DDE17 /* JobCatgory.xib */; };
-		9468673827F0858C005DDE17 /* JobExpertise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9468673427F0858C005DDE17 /* JobExpertise.swift */; };
+		9468672C27F0852E005DDE17 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9468672627F0852E005DDE17 /* SignInVC.swift */; };
+		9468672D27F0852E005DDE17 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9468672727F0852E005DDE17 /* SignUpVC.swift */; };
+		9468672E27F0852E005DDE17 /* SignInVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9468672827F0852E005DDE17 /* SignInVC.xib */; };
+		9468672F27F0852E005DDE17 /* SignUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9468672927F0852E005DDE17 /* SignUpVC.xib */; };
 		9468674027F08674005DDE17 /* LanguagesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9468673A27F08674005DDE17 /* LanguagesVC.xib */; };
 		9468674127F08674005DDE17 /* NotificationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9468673B27F08674005DDE17 /* NotificationsVC.swift */; };
 		9468674227F08674005DDE17 /* LanguagesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9468673C27F08674005DDE17 /* LanguagesVC.swift */; };
 		9468674327F08674005DDE17 /* NotificationsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9468673D27F08674005DDE17 /* NotificationsVC.xib */; };
 		9468674427F08674005DDE17 /* PasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9468673E27F08674005DDE17 /* PasswordVC.xib */; };
 		9468674527F08674005DDE17 /* PasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9468673F27F08674005DDE17 /* PasswordVC.swift */; };
+		9468674927F0886F005DDE17 /* GeneralTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9468674727F0886F005DDE17 /* GeneralTextField.swift */; };
+		9468674B27F08897005DDE17 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9468674A27F08897005DDE17 /* Colors.swift */; };
+		9468675427F09ACC005DDE17 /* Fire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9468675327F09ACC005DDE17 /* Fire.swift */; };
 		B7B0EB6B8A05129DB0E6FCD5 /* Pods_Clickjobs_New.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92DE3BBA8F5AB0EF5ADC76B3 /* Pods_Clickjobs_New.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,63 +52,38 @@
 		946866A927F0735C005DDE17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		946866AC27F0735C005DDE17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		946866AE27F0735C005DDE17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		946866CB27F084D3005DDE17 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
-		946866CC27F084D3005DDE17 /* VcancyTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VcancyTVC.swift; sourceTree = "<group>"; };
-		946866CD27F084D3005DDE17 /* ProfileSettigsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileSettigsVC.xib; sourceTree = "<group>"; };
-		946866CE27F084D3005DDE17 /* ProfileSettigsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileSettigsVC.swift; sourceTree = "<group>"; };
-		946866CF27F084D3005DDE17 /* ProfileVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
-		946866D027F084D3005DDE17 /* VcancyTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VcancyTVC.xib; sourceTree = "<group>"; };
 		946866D827F084FF005DDE17 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		946866D927F084FF005DDE17 /* EditVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditVC.xib; sourceTree = "<group>"; };
 		946866DA27F084FF005DDE17 /* ProfileVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		946866DB27F084FF005DDE17 /* EditVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditVC.swift; sourceTree = "<group>"; };
-		946866E127F0850C005DDE17 /* CreateVacancyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateVacancyVC.swift; sourceTree = "<group>"; };
-		946866E227F0850C005DDE17 /* EmployeeDescriptionVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmployeeDescriptionVC.xib; sourceTree = "<group>"; };
-		946866E327F0850C005DDE17 /* EmployeeDescriptionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeDescriptionVC.swift; sourceTree = "<group>"; };
-		946866E427F0850C005DDE17 /* CreateVacancyVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateVacancyVC.xib; sourceTree = "<group>"; };
 		946866EA27F08512005DDE17 /* MainTBC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTBC.swift; sourceTree = "<group>"; };
 		946866EB27F08512005DDE17 /* VacanciesVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VacanciesVC.xib; sourceTree = "<group>"; };
 		946866EC27F08512005DDE17 /* VacanciesDesVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VacanciesDesVC.xib; sourceTree = "<group>"; };
 		946866ED27F08512005DDE17 /* VacanciesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VacanciesVC.swift; sourceTree = "<group>"; };
-		946866EE27F08512005DDE17 /* VacanciesTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VacanciesTVC.swift; sourceTree = "<group>"; };
 		946866EF27F08512005DDE17 /* VacanciesDesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VacanciesDesVC.swift; sourceTree = "<group>"; };
-		946866F027F08512005DDE17 /* VacanciesTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VacanciesTVC.xib; sourceTree = "<group>"; };
-		946866F927F08519005DDE17 /* CustomClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomClass.swift; sourceTree = "<group>"; };
 		946866FA27F08519005DDE17 /* ResumeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResumeVC.swift; sourceTree = "<group>"; };
-		946866FB27F08519005DDE17 /* PersonalDataVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalDataVC.swift; sourceTree = "<group>"; };
-		946866FC27F08519005DDE17 /* PersonalDataVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalDataVC.xib; sourceTree = "<group>"; };
 		946866FD27F08519005DDE17 /* ResumeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResumeVC.xib; sourceTree = "<group>"; };
-		9468670427F08520005DDE17 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		9468670527F08520005DDE17 /* EmployessVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployessVC.swift; sourceTree = "<group>"; };
 		9468670627F08520005DDE17 /* EmployessTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmployessTVC.xib; sourceTree = "<group>"; };
-		9468670727F08520005DDE17 /* VacancyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VacancyVC.swift; sourceTree = "<group>"; };
-		9468670827F08520005DDE17 /* ProfileVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		9468670927F08520005DDE17 /* EmployessDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployessDetailVC.swift; sourceTree = "<group>"; };
-		9468670A27F08520005DDE17 /* VacancyVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VacancyVC.xib; sourceTree = "<group>"; };
-		9468670B27F08520005DDE17 /* MainTabbarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabbarVC.swift; sourceTree = "<group>"; };
 		9468670C27F08520005DDE17 /* EmployessDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmployessDetailVC.xib; sourceTree = "<group>"; };
 		9468670D27F08520005DDE17 /* EmployessTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployessTVC.swift; sourceTree = "<group>"; };
 		9468670E27F08520005DDE17 /* EmployessVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmployessVC.xib; sourceTree = "<group>"; };
-		9468671B27F08527005DDE17 /* ProfileSettingsPasswordVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileSettingsPasswordVC.xib; sourceTree = "<group>"; };
-		9468671C27F08527005DDE17 /* ProfileSettingsPasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileSettingsPasswordVC.swift; sourceTree = "<group>"; };
-		9468671D27F08527005DDE17 /* ProfileSettingVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileSettingVC.xib; sourceTree = "<group>"; };
-		9468671E27F08527005DDE17 /* ProfileSettingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileSettingVC.swift; sourceTree = "<group>"; };
 		9468672427F0852E005DDE17 /* WalkVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkVC.swift; sourceTree = "<group>"; };
 		9468672527F0852E005DDE17 /* WalkVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WalkVC.xib; sourceTree = "<group>"; };
-		9468672627F0852E005DDE17 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
-		9468672727F0852E005DDE17 /* SiginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiginVC.swift; sourceTree = "<group>"; };
-		9468672827F0852E005DDE17 /* LoginVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
-		9468672927F0852E005DDE17 /* SiginVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SiginVC.xib; sourceTree = "<group>"; };
-		9468673127F0858C005DDE17 /* JobCatgory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobCatgory.swift; sourceTree = "<group>"; };
-		9468673227F0858C005DDE17 /* JobExpertise.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobExpertise.xib; sourceTree = "<group>"; };
-		9468673327F0858C005DDE17 /* JobCatgory.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobCatgory.xib; sourceTree = "<group>"; };
-		9468673427F0858C005DDE17 /* JobExpertise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobExpertise.swift; sourceTree = "<group>"; };
+		9468672627F0852E005DDE17 /* SignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		9468672727F0852E005DDE17 /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		9468672827F0852E005DDE17 /* SignInVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInVC.xib; sourceTree = "<group>"; };
+		9468672927F0852E005DDE17 /* SignUpVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpVC.xib; sourceTree = "<group>"; };
 		9468673A27F08674005DDE17 /* LanguagesVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LanguagesVC.xib; sourceTree = "<group>"; };
 		9468673B27F08674005DDE17 /* NotificationsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsVC.swift; sourceTree = "<group>"; };
 		9468673C27F08674005DDE17 /* LanguagesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguagesVC.swift; sourceTree = "<group>"; };
 		9468673D27F08674005DDE17 /* NotificationsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationsVC.xib; sourceTree = "<group>"; };
 		9468673E27F08674005DDE17 /* PasswordVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PasswordVC.xib; sourceTree = "<group>"; };
 		9468673F27F08674005DDE17 /* PasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordVC.swift; sourceTree = "<group>"; };
+		9468674727F0886F005DDE17 /* GeneralTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralTextField.swift; sourceTree = "<group>"; };
+		9468674A27F08897005DDE17 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		9468675327F09ACC005DDE17 /* Fire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fire.swift; sourceTree = "<group>"; };
 		A57B50C32F07D162D2FBFAFE /* Pods-Clickjobs New.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clickjobs New.release.xcconfig"; path = "Target Support Files/Pods-Clickjobs New/Pods-Clickjobs New.release.xcconfig"; sourceTree = "<group>"; };
 		A697295CF21E15089DCDE860 /* Pods-Clickjobs New.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clickjobs New.debug.xcconfig"; path = "Target Support Files/Pods-Clickjobs New/Pods-Clickjobs New.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -171,17 +121,10 @@
 		9468669F27F0735B005DDE17 /* Clickjobs New */ = {
 			isa = PBXGroup;
 			children = (
-				9468673927F08674005DDE17 /* Bahodir */,
-				9468673027F0858C005DDE17 /* Humoyun */,
-				9468672327F0852E005DDE17 /* Siroj */,
-				9468671A27F08527005DDE17 /* Shotilla */,
-				9468670327F08520005DDE17 /* Sherzod */,
-				946866F827F08519005DDE17 /* Muslimbek */,
-				946866E927F08512005DDE17 /* Mirmuhammad */,
-				946866E027F0850C005DDE17 /* Mavlon */,
-				946866D727F084FF005DDE17 /* Jahongir */,
-				946866CA27F084D3005DDE17 /* Ilhom */,
-				946866A027F0735B005DDE17 /* AppDelegate.swift */,
+				9468675127F098E7005DDE17 /* Model */,
+				9468675027F098E0005DDE17 /* View */,
+				9468674F27F098BB005DDE17 /* Controller */,
+				9468674D27F08C94005DDE17 /* Helpers */,
 				946866A927F0735C005DDE17 /* Assets.xcassets */,
 				946866AB27F0735C005DDE17 /* LaunchScreen.storyboard */,
 				946866AE27F0735C005DDE17 /* Info.plist */,
@@ -189,131 +132,81 @@
 			path = "Clickjobs New";
 			sourceTree = "<group>";
 		};
-		946866CA27F084D3005DDE17 /* Ilhom */ = {
+		9468674D27F08C94005DDE17 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				946866CB27F084D3005DDE17 /* ProfileVC.swift */,
-				946866CC27F084D3005DDE17 /* VcancyTVC.swift */,
-				946866CD27F084D3005DDE17 /* ProfileSettigsVC.xib */,
-				946866CE27F084D3005DDE17 /* ProfileSettigsVC.swift */,
-				946866CF27F084D3005DDE17 /* ProfileVC.xib */,
-				946866D027F084D3005DDE17 /* VcancyTVC.xib */,
+				9468674A27F08897005DDE17 /* Colors.swift */,
+				9468674727F0886F005DDE17 /* GeneralTextField.swift */,
+				9468675327F09ACC005DDE17 /* Fire.swift */,
 			);
-			path = Ilhom;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
-		946866D727F084FF005DDE17 /* Jahongir */ = {
+		9468674E27F093B3005DDE17 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				9468670D27F08520005DDE17 /* EmployessTVC.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		9468674F27F098BB005DDE17 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9468674E27F093B3005DDE17 /* Cells */,
+				946866A027F0735B005DDE17 /* AppDelegate.swift */,
+				946866EA27F08512005DDE17 /* MainTBC.swift */,
+				9468672427F0852E005DDE17 /* WalkVC.swift */,
+				9468672627F0852E005DDE17 /* SignInVC.swift */,
+				9468672727F0852E005DDE17 /* SignUpVC.swift */,
+				9468673C27F08674005DDE17 /* LanguagesVC.swift */,
+				9468673B27F08674005DDE17 /* NotificationsVC.swift */,
+				9468673F27F08674005DDE17 /* PasswordVC.swift */,
+				9468670527F08520005DDE17 /* EmployessVC.swift */,
+				9468670927F08520005DDE17 /* EmployessDetailVC.swift */,
+				946866FA27F08519005DDE17 /* ResumeVC.swift */,
+				946866ED27F08512005DDE17 /* VacanciesVC.swift */,
+				946866EF27F08512005DDE17 /* VacanciesDesVC.swift */,
 				946866D827F084FF005DDE17 /* ProfileVC.swift */,
-				946866D927F084FF005DDE17 /* EditVC.xib */,
-				946866DA27F084FF005DDE17 /* ProfileVC.xib */,
 				946866DB27F084FF005DDE17 /* EditVC.swift */,
 			);
-			path = Jahongir;
+			path = Controller;
 			sourceTree = "<group>";
 		};
-		946866E027F0850C005DDE17 /* Mavlon */ = {
+		9468675027F098E0005DDE17 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				946866E127F0850C005DDE17 /* CreateVacancyVC.swift */,
-				946866E227F0850C005DDE17 /* EmployeeDescriptionVC.xib */,
-				946866E327F0850C005DDE17 /* EmployeeDescriptionVC.swift */,
-				946866E427F0850C005DDE17 /* CreateVacancyVC.xib */,
-			);
-			path = Mavlon;
-			sourceTree = "<group>";
-		};
-		946866E927F08512005DDE17 /* Mirmuhammad */ = {
-			isa = PBXGroup;
-			children = (
-				946866EA27F08512005DDE17 /* MainTBC.swift */,
-				946866EB27F08512005DDE17 /* VacanciesVC.xib */,
-				946866EC27F08512005DDE17 /* VacanciesDesVC.xib */,
-				946866ED27F08512005DDE17 /* VacanciesVC.swift */,
-				946866EE27F08512005DDE17 /* VacanciesTVC.swift */,
-				946866EF27F08512005DDE17 /* VacanciesDesVC.swift */,
-				946866F027F08512005DDE17 /* VacanciesTVC.xib */,
-			);
-			path = Mirmuhammad;
-			sourceTree = "<group>";
-		};
-		946866F827F08519005DDE17 /* Muslimbek */ = {
-			isa = PBXGroup;
-			children = (
-				946866F927F08519005DDE17 /* CustomClass.swift */,
-				946866FA27F08519005DDE17 /* ResumeVC.swift */,
-				946866FB27F08519005DDE17 /* PersonalDataVC.swift */,
-				946866FC27F08519005DDE17 /* PersonalDataVC.xib */,
-				946866FD27F08519005DDE17 /* ResumeVC.xib */,
-			);
-			path = Muslimbek;
-			sourceTree = "<group>";
-		};
-		9468670327F08520005DDE17 /* Sherzod */ = {
-			isa = PBXGroup;
-			children = (
-				9468670427F08520005DDE17 /* ProfileVC.swift */,
-				9468670527F08520005DDE17 /* EmployessVC.swift */,
-				9468670627F08520005DDE17 /* EmployessTVC.xib */,
-				9468670727F08520005DDE17 /* VacancyVC.swift */,
-				9468670827F08520005DDE17 /* ProfileVC.xib */,
-				9468670927F08520005DDE17 /* EmployessDetailVC.swift */,
-				9468670A27F08520005DDE17 /* VacancyVC.xib */,
-				9468670B27F08520005DDE17 /* MainTabbarVC.swift */,
-				9468670C27F08520005DDE17 /* EmployessDetailVC.xib */,
-				9468670D27F08520005DDE17 /* EmployessTVC.swift */,
-				9468670E27F08520005DDE17 /* EmployessVC.xib */,
-			);
-			path = Sherzod;
-			sourceTree = "<group>";
-		};
-		9468671A27F08527005DDE17 /* Shotilla */ = {
-			isa = PBXGroup;
-			children = (
-				9468671B27F08527005DDE17 /* ProfileSettingsPasswordVC.xib */,
-				9468671C27F08527005DDE17 /* ProfileSettingsPasswordVC.swift */,
-				9468671D27F08527005DDE17 /* ProfileSettingVC.xib */,
-				9468671E27F08527005DDE17 /* ProfileSettingVC.swift */,
-			);
-			path = Shotilla;
-			sourceTree = "<group>";
-		};
-		9468672327F0852E005DDE17 /* Siroj */ = {
-			isa = PBXGroup;
-			children = (
-				9468672427F0852E005DDE17 /* WalkVC.swift */,
+				9468675227F09918005DDE17 /* Cells */,
 				9468672527F0852E005DDE17 /* WalkVC.xib */,
-				9468672627F0852E005DDE17 /* LoginVC.swift */,
-				9468672727F0852E005DDE17 /* SiginVC.swift */,
-				9468672827F0852E005DDE17 /* LoginVC.xib */,
-				9468672927F0852E005DDE17 /* SiginVC.xib */,
-			);
-			path = Siroj;
-			sourceTree = "<group>";
-		};
-		9468673027F0858C005DDE17 /* Humoyun */ = {
-			isa = PBXGroup;
-			children = (
-				9468673127F0858C005DDE17 /* JobCatgory.swift */,
-				9468673227F0858C005DDE17 /* JobExpertise.xib */,
-				9468673327F0858C005DDE17 /* JobCatgory.xib */,
-				9468673427F0858C005DDE17 /* JobExpertise.swift */,
-			);
-			path = Humoyun;
-			sourceTree = "<group>";
-		};
-		9468673927F08674005DDE17 /* Bahodir */ = {
-			isa = PBXGroup;
-			children = (
+				9468672827F0852E005DDE17 /* SignInVC.xib */,
+				9468672927F0852E005DDE17 /* SignUpVC.xib */,
 				9468673A27F08674005DDE17 /* LanguagesVC.xib */,
-				9468673B27F08674005DDE17 /* NotificationsVC.swift */,
-				9468673C27F08674005DDE17 /* LanguagesVC.swift */,
 				9468673D27F08674005DDE17 /* NotificationsVC.xib */,
 				9468673E27F08674005DDE17 /* PasswordVC.xib */,
-				9468673F27F08674005DDE17 /* PasswordVC.swift */,
+				9468670E27F08520005DDE17 /* EmployessVC.xib */,
+				9468670C27F08520005DDE17 /* EmployessDetailVC.xib */,
+				946866FD27F08519005DDE17 /* ResumeVC.xib */,
+				946866EB27F08512005DDE17 /* VacanciesVC.xib */,
+				946866EC27F08512005DDE17 /* VacanciesDesVC.xib */,
+				946866DA27F084FF005DDE17 /* ProfileVC.xib */,
+				946866D927F084FF005DDE17 /* EditVC.xib */,
 			);
-			path = Bahodir;
+			path = View;
+			sourceTree = "<group>";
+		};
+		9468675127F098E7005DDE17 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9468675227F09918005DDE17 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9468670627F08520005DDE17 /* EmployessTVC.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		C9EADFEB8D854AC0CD645A1E /* Frameworks */ = {
@@ -393,33 +286,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				946866D527F084D4005DDE17 /* ProfileVC.xib in Resources */,
-				9468672E27F0852E005DDE17 /* LoginVC.xib in Resources */,
+				9468672E27F0852E005DDE17 /* SignInVC.xib in Resources */,
 				946866AD27F0735C005DDE17 /* LaunchScreen.storyboard in Resources */,
 				946866F227F08512005DDE17 /* VacanciesVC.xib in Resources */,
-				9468670127F08519005DDE17 /* PersonalDataVC.xib in Resources */,
 				946866DD27F084FF005DDE17 /* EditVC.xib in Resources */,
 				9468670227F08519005DDE17 /* ResumeVC.xib in Resources */,
-				946866D627F084D4005DDE17 /* VcancyTVC.xib in Resources */,
 				9468671127F08520005DDE17 /* EmployessTVC.xib in Resources */,
-				9468671527F08520005DDE17 /* VacancyVC.xib in Resources */,
 				9468671727F08520005DDE17 /* EmployessDetailVC.xib in Resources */,
-				9468671327F08520005DDE17 /* ProfileVC.xib in Resources */,
 				946866DE27F084FF005DDE17 /* ProfileVC.xib in Resources */,
-				9468671F27F08527005DDE17 /* ProfileSettingsPasswordVC.xib in Resources */,
 				9468674427F08674005DDE17 /* PasswordVC.xib in Resources */,
 				9468671927F08520005DDE17 /* EmployessVC.xib in Resources */,
-				9468673727F0858C005DDE17 /* JobCatgory.xib in Resources */,
-				9468672F27F0852E005DDE17 /* SiginVC.xib in Resources */,
+				9468672F27F0852E005DDE17 /* SignUpVC.xib in Resources */,
 				946866AA27F0735C005DDE17 /* Assets.xcassets in Resources */,
 				9468672B27F0852E005DDE17 /* WalkVC.xib in Resources */,
-				946866F727F08512005DDE17 /* VacanciesTVC.xib in Resources */,
-				946866D327F084D4005DDE17 /* ProfileSettigsVC.xib in Resources */,
 				946866F327F08512005DDE17 /* VacanciesDesVC.xib in Resources */,
-				946866E827F0850C005DDE17 /* CreateVacancyVC.xib in Resources */,
-				946866E627F0850C005DDE17 /* EmployeeDescriptionVC.xib in Resources */,
-				9468672127F08527005DDE17 /* ProfileSettingVC.xib in Resources */,
-				9468673627F0858C005DDE17 /* JobExpertise.xib in Resources */,
 				9468674027F08674005DDE17 /* LanguagesVC.xib in Resources */,
 				9468674327F08674005DDE17 /* NotificationsVC.xib in Resources */,
 			);
@@ -474,36 +354,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9468670027F08519005DDE17 /* PersonalDataVC.swift in Sources */,
-				946866F527F08512005DDE17 /* VacanciesTVC.swift in Sources */,
-				9468673527F0858C005DDE17 /* JobCatgory.swift in Sources */,
-				9468672027F08527005DDE17 /* ProfileSettingsPasswordVC.swift in Sources */,
 				946866DC27F084FF005DDE17 /* ProfileVC.swift in Sources */,
-				946866D427F084D4005DDE17 /* ProfileSettigsVC.swift in Sources */,
 				9468674227F08674005DDE17 /* LanguagesVC.swift in Sources */,
-				9468670F27F08520005DDE17 /* ProfileVC.swift in Sources */,
 				946866A127F0735B005DDE17 /* AppDelegate.swift in Sources */,
-				946866E727F0850C005DDE17 /* EmployeeDescriptionVC.swift in Sources */,
+				9468674927F0886F005DDE17 /* GeneralTextField.swift in Sources */,
 				946866FF27F08519005DDE17 /* ResumeVC.swift in Sources */,
-				9468672D27F0852E005DDE17 /* SiginVC.swift in Sources */,
-				9468672C27F0852E005DDE17 /* LoginVC.swift in Sources */,
-				9468671227F08520005DDE17 /* VacancyVC.swift in Sources */,
-				9468673827F0858C005DDE17 /* JobExpertise.swift in Sources */,
+				9468672D27F0852E005DDE17 /* SignUpVC.swift in Sources */,
+				9468672C27F0852E005DDE17 /* SignInVC.swift in Sources */,
 				946866F627F08512005DDE17 /* VacanciesDesVC.swift in Sources */,
 				946866F427F08512005DDE17 /* VacanciesVC.swift in Sources */,
 				9468671027F08520005DDE17 /* EmployessVC.swift in Sources */,
-				946866D127F084D4005DDE17 /* ProfileVC.swift in Sources */,
-				946866E527F0850C005DDE17 /* CreateVacancyVC.swift in Sources */,
 				9468671827F08520005DDE17 /* EmployessTVC.swift in Sources */,
-				9468672227F08527005DDE17 /* ProfileSettingVC.swift in Sources */,
 				9468674527F08674005DDE17 /* PasswordVC.swift in Sources */,
 				946866DF27F084FF005DDE17 /* EditVC.swift in Sources */,
-				9468671627F08520005DDE17 /* MainTabbarVC.swift in Sources */,
 				9468671427F08520005DDE17 /* EmployessDetailVC.swift in Sources */,
-				946866D227F084D4005DDE17 /* VcancyTVC.swift in Sources */,
-				946866FE27F08519005DDE17 /* CustomClass.swift in Sources */,
+				9468674B27F08897005DDE17 /* Colors.swift in Sources */,
 				9468674127F08674005DDE17 /* NotificationsVC.swift in Sources */,
 				946866F127F08512005DDE17 /* MainTBC.swift in Sources */,
+				9468675427F09ACC005DDE17 /* Fire.swift in Sources */,
 				9468672A27F0852E005DDE17 /* WalkVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
