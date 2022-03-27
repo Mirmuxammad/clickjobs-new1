@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27E375D827F07A11004CF777 /* EmployessDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E375D327F07A11004CF777 /* EmployessDetailVC.swift */; };
+		27E375D927F07A11004CF777 /* EmployessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E375D427F07A11004CF777 /* EmployessVC.swift */; };
+		27E375DA27F07A11004CF777 /* MainTabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E375D527F07A11004CF777 /* MainTabbarVC.swift */; };
+		27E375DB27F07A11004CF777 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E375D627F07A11004CF777 /* ProfileVC.swift */; };
+		27E375DC27F07A11004CF777 /* VacancyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E375D727F07A11004CF777 /* VacancyVC.swift */; };
+		27E375E027F07A60004CF777 /* EmployessTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E375DF27F07A60004CF777 /* EmployessTVC.swift */; };
+		27E375E527F07A7E004CF777 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27E375E127F07A7E004CF777 /* ProfileVC.xib */; };
+		27E375E627F07A7E004CF777 /* EmployessDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27E375E227F07A7E004CF777 /* EmployessDetailVC.xib */; };
+		27E375E727F07A7E004CF777 /* VacancyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27E375E327F07A7E004CF777 /* VacancyVC.xib */; };
+		27E375E827F07A7E004CF777 /* EmployessVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27E375E427F07A7E004CF777 /* EmployessVC.xib */; };
+		27E375EA27F07A99004CF777 /* EmployessTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27E375E927F07A99004CF777 /* EmployessTVC.xib */; };
 		946866A127F0735B005DDE17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946866A027F0735B005DDE17 /* AppDelegate.swift */; };
 		946866AA27F0735C005DDE17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 946866A927F0735C005DDE17 /* Assets.xcassets */; };
 		946866AD27F0735C005DDE17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 946866AB27F0735C005DDE17 /* LaunchScreen.storyboard */; };
@@ -14,6 +25,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27E375D327F07A11004CF777 /* EmployessDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployessDetailVC.swift; sourceTree = "<group>"; };
+		27E375D427F07A11004CF777 /* EmployessVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployessVC.swift; sourceTree = "<group>"; };
+		27E375D527F07A11004CF777 /* MainTabbarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabbarVC.swift; sourceTree = "<group>"; };
+		27E375D627F07A11004CF777 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		27E375D727F07A11004CF777 /* VacancyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VacancyVC.swift; sourceTree = "<group>"; };
+		27E375DF27F07A60004CF777 /* EmployessTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployessTVC.swift; sourceTree = "<group>"; };
+		27E375E127F07A7E004CF777 /* ProfileVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
+		27E375E227F07A7E004CF777 /* EmployessDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmployessDetailVC.xib; sourceTree = "<group>"; };
+		27E375E327F07A7E004CF777 /* VacancyVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VacancyVC.xib; sourceTree = "<group>"; };
+		27E375E427F07A7E004CF777 /* EmployessVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmployessVC.xib; sourceTree = "<group>"; };
+		27E375E927F07A99004CF777 /* EmployessTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmployessTVC.xib; sourceTree = "<group>"; };
 		92DE3BBA8F5AB0EF5ADC76B3 /* Pods_Clickjobs_New.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clickjobs_New.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9468669D27F0735B005DDE17 /* Clickjobs New.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clickjobs New.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		946866A027F0735B005DDE17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +58,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27E375D027F078F2004CF777 /* Sherzod */ = {
+			isa = PBXGroup;
+			children = (
+				27E375E927F07A99004CF777 /* EmployessTVC.xib */,
+				27E375E227F07A7E004CF777 /* EmployessDetailVC.xib */,
+				27E375E427F07A7E004CF777 /* EmployessVC.xib */,
+				27E375E127F07A7E004CF777 /* ProfileVC.xib */,
+				27E375E327F07A7E004CF777 /* VacancyVC.xib */,
+				27E375DF27F07A60004CF777 /* EmployessTVC.swift */,
+				27E375D327F07A11004CF777 /* EmployessDetailVC.swift */,
+				27E375D427F07A11004CF777 /* EmployessVC.swift */,
+				27E375D527F07A11004CF777 /* MainTabbarVC.swift */,
+				27E375D627F07A11004CF777 /* ProfileVC.swift */,
+				27E375D727F07A11004CF777 /* VacancyVC.swift */,
+			);
+			path = Sherzod;
+			sourceTree = "<group>";
+		};
 		9468669427F0735A005DDE17 = {
 			isa = PBXGroup;
 			children = (
@@ -57,8 +97,8 @@
 		9468669F27F0735B005DDE17 /* Clickjobs New */ = {
 			isa = PBXGroup;
 			children = (
+				27E375D027F078F2004CF777 /* Sherzod */,
 				946866BD27F075CE005DDE17 /* Ilhom */,
-				946866BC27F075C6005DDE17 /* Sherzod */,
 				946866BB27F075C0005DDE17 /* Bahodir */,
 				946866BA27F075BA005DDE17 /* Shotilla */,
 				946866B927F075B2005DDE17 /* Muslimbek */,
@@ -129,13 +169,6 @@
 			children = (
 			);
 			path = Bahodir;
-			sourceTree = "<group>";
-		};
-		946866BC27F075C6005DDE17 /* Sherzod */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Sherzod;
 			sourceTree = "<group>";
 		};
 		946866BD27F075CE005DDE17 /* Ilhom */ = {
@@ -222,8 +255,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27E375E827F07A7E004CF777 /* EmployessVC.xib in Resources */,
 				946866AD27F0735C005DDE17 /* LaunchScreen.storyboard in Resources */,
+				27E375E727F07A7E004CF777 /* VacancyVC.xib in Resources */,
+				27E375EA27F07A99004CF777 /* EmployessTVC.xib in Resources */,
+				27E375E527F07A7E004CF777 /* ProfileVC.xib in Resources */,
 				946866AA27F0735C005DDE17 /* Assets.xcassets in Resources */,
+				27E375E627F07A7E004CF777 /* EmployessDetailVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +314,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27E375E027F07A60004CF777 /* EmployessTVC.swift in Sources */,
+				27E375DB27F07A11004CF777 /* ProfileVC.swift in Sources */,
 				946866A127F0735B005DDE17 /* AppDelegate.swift in Sources */,
+				27E375DC27F07A11004CF777 /* VacancyVC.swift in Sources */,
+				27E375D827F07A11004CF777 /* EmployessDetailVC.swift in Sources */,
+				27E375D927F07A11004CF777 /* EmployessVC.swift in Sources */,
+				27E375DA27F07A11004CF777 /* MainTabbarVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
