@@ -110,7 +110,6 @@
 				946866BA27F075BA005DDE17 /* Shotilla */,
 				946866B827F075A5005DDE17 /* Jahongir */,
 				946866B727F0759F005DDE17 /* Humoyun */,
-				946866B627F07579005DDE17 /* Siroj */,
 				946866B527F07570005DDE17 /* Mirmuhammad */,
 				946866A027F0735B005DDE17 /* AppDelegate.swift */,
 				946866A927F0735C005DDE17 /* Assets.xcassets */,
@@ -125,13 +124,6 @@
 			children = (
 			);
 			path = Mirmuhammad;
-			sourceTree = "<group>";
-		};
-		946866B627F07579005DDE17 /* Siroj */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Siroj;
 			sourceTree = "<group>";
 		};
 		946866B727F0759F005DDE17 /* Humoyun */ = {
@@ -258,6 +250,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41024F1627F078D5009A2A68 /* LoginVC.xib in Resources */,
 				946866AD27F0735C005DDE17 /* LaunchScreen.storyboard in Resources */,
 				5D823F5727F0795800D4B81F /* HomeVC.xib in Resources */,
 				946866AA27F0735C005DDE17 /* Assets.xcassets in Resources */,
