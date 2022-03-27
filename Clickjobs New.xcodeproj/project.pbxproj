@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7FAE87CE27F079FC00B9604F /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAE87CA27F079FC00B9604F /* ProfileVC.swift */; };
+		7FAE87CF27F079FC00B9604F /* EditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAE87CB27F079FC00B9604F /* EditVC.swift */; };
+		7FAE87D027F079FC00B9604F /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FAE87CC27F079FC00B9604F /* ProfileVC.xib */; };
+		7FAE87D127F079FC00B9604F /* EditVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FAE87CD27F079FC00B9604F /* EditVC.xib */; };
 		946866A127F0735B005DDE17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946866A027F0735B005DDE17 /* AppDelegate.swift */; };
 		946866AA27F0735C005DDE17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 946866A927F0735C005DDE17 /* Assets.xcassets */; };
 		946866AD27F0735C005DDE17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 946866AB27F0735C005DDE17 /* LaunchScreen.storyboard */; };
@@ -14,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7FAE87CA27F079FC00B9604F /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		7FAE87CB27F079FC00B9604F /* EditVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditVC.swift; sourceTree = "<group>"; };
+		7FAE87CC27F079FC00B9604F /* ProfileVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
+		7FAE87CD27F079FC00B9604F /* EditVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditVC.xib; sourceTree = "<group>"; };
 		92DE3BBA8F5AB0EF5ADC76B3 /* Pods_Clickjobs_New.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clickjobs_New.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9468669D27F0735B005DDE17 /* Clickjobs New.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clickjobs New.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		946866A027F0735B005DDE17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +44,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7FAE87C927F079C400B9604F /* Jahongir */ = {
+			isa = PBXGroup;
+			children = (
+				7FAE87CB27F079FC00B9604F /* EditVC.swift */,
+				7FAE87CD27F079FC00B9604F /* EditVC.xib */,
+				7FAE87CA27F079FC00B9604F /* ProfileVC.swift */,
+				7FAE87CC27F079FC00B9604F /* ProfileVC.xib */,
+			);
+			path = Jahongir;
+			sourceTree = "<group>";
+		};
 		9468669427F0735A005DDE17 = {
 			isa = PBXGroup;
 			children = (
@@ -62,11 +81,11 @@
 				946866BB27F075C0005DDE17 /* Bahodir */,
 				946866BA27F075BA005DDE17 /* Shotilla */,
 				946866B927F075B2005DDE17 /* Muslimbek */,
-				946866B827F075A5005DDE17 /* Jahongir */,
 				946866B727F0759F005DDE17 /* Humoyun */,
 				946866B627F07579005DDE17 /* Siroj */,
 				946866B527F07570005DDE17 /* Mirmuhammad */,
 				946866B427F0755E005DDE17 /* Mavlon */,
+				7FAE87C927F079C400B9604F /* Jahongir */,
 				946866A027F0735B005DDE17 /* AppDelegate.swift */,
 				946866A927F0735C005DDE17 /* Assets.xcassets */,
 				946866AB27F0735C005DDE17 /* LaunchScreen.storyboard */,
@@ -101,13 +120,6 @@
 			children = (
 			);
 			path = Humoyun;
-			sourceTree = "<group>";
-		};
-		946866B827F075A5005DDE17 /* Jahongir */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Jahongir;
 			sourceTree = "<group>";
 		};
 		946866B927F075B2005DDE17 /* Muslimbek */ = {
@@ -223,6 +235,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				946866AD27F0735C005DDE17 /* LaunchScreen.storyboard in Resources */,
+				7FAE87D027F079FC00B9604F /* ProfileVC.xib in Resources */,
+				7FAE87D127F079FC00B9604F /* EditVC.xib in Resources */,
 				946866AA27F0735C005DDE17 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +290,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FAE87CE27F079FC00B9604F /* ProfileVC.swift in Sources */,
+				7FAE87CF27F079FC00B9604F /* EditVC.swift in Sources */,
 				946866A127F0735B005DDE17 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
