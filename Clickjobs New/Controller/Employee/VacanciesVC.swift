@@ -25,6 +25,7 @@ class VacanciesVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         
         Fire.shared.getVacancyies { newVacs in
             self.vacancies = newVacs
@@ -63,7 +64,10 @@ extension VacanciesVC: UITableViewDelegate, UITableViewDataSource {
         let vc = VacanciesDesVC(nibName: "VacanciesDesVC", bundle: nil)
         vc.urlString = vacancies[indexPath.row].infoUrl
         vc.category = vacancies[indexPath.row].category
+        vc.hidesBottomBarWhenPushed = true
         self.navigationController?.pushViewController(vc, animated: true)
+        vc.hidesBottomBarWhenPushed = false
+
     }
     
     

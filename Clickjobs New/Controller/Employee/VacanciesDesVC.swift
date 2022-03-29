@@ -28,6 +28,7 @@ class VacanciesDesVC: UIViewController {
         self.webView.isOpaque = false
         self.webView.backgroundColor = .defaultGray
         
+
     }
     
     
