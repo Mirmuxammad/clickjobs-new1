@@ -31,6 +31,7 @@ class VacanciesVC: UIViewController {
             self.tableView.reloadData()
         }
         
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -59,12 +60,10 @@ extension VacanciesVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//
-//        let vc = VacanciesDesVC.init(nibName: "VacanciesDesVC", bundle: nil)
-//
-//        self.hidesBottomBarWhenPushed = true
-//        navigationController?.pushViewController(vc, animated: true)
-//        self.hidesBottomBarWhenPushed = false
+        let vc = VacanciesDesVC(nibName: "VacanciesDesVC", bundle: nil)
+        vc.urlString = vacancies[indexPath.row].infoUrl
+        vc.category = vacancies[indexPath.row].category
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     

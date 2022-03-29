@@ -193,8 +193,6 @@
 				9468673F27F08674005DDE17 /* PasswordVC.swift */,
 				9468670927F08520005DDE17 /* EmployessDetailVC.swift */,
 				946866FA27F08519005DDE17 /* ResumeVC.swift */,
-				946866ED27F08512005DDE17 /* VacanciesVC.swift */,
-				946866EF27F08512005DDE17 /* VacanciesDesVC.swift */,
 				946866D827F084FF005DDE17 /* ProfileVC.swift */,
 				946866DB27F084FF005DDE17 /* EditVC.swift */,
 			);
@@ -260,6 +258,8 @@
 			isa = PBXGroup;
 			children = (
 				946866EA27F08512005DDE17 /* EmployeeMainTBC.swift */,
+				946866ED27F08512005DDE17 /* VacanciesVC.swift */,
+				946866EF27F08512005DDE17 /* VacanciesDesVC.swift */,
 			);
 			path = Employee;
 			sourceTree = "<group>";
