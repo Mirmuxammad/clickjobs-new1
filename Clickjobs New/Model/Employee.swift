@@ -9,6 +9,7 @@ import Foundation
 
 
 struct User {
+    
     var id: String
     var firstName: String
     var lastName: String
@@ -26,7 +27,6 @@ struct User {
     var companyID: String
     var isEmployee: Bool
 
-    
     
     func getDictionary() -> [String:Any] {
         return [
@@ -46,7 +46,5 @@ struct User {
                     
         ]
     }
-    
-
-    
+        
 }
