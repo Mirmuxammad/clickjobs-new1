@@ -13,11 +13,9 @@ struct Vacancy {
     var infoUrl: String
     var salary: String
     var title: String
-//    var paragraphTitle: String
     var workAddress: String
-//    var descriptionText: String
-    var jobTypeId: String
-    var jobTag: String
+    var category: String
+    var subcategory: String
     var companyName: String
     
     
@@ -29,8 +27,8 @@ struct Vacancy {
             "salary":salary,
             "title":title,
             "workAddress":workAddress,
-            "jobTypeId":jobTypeId,
-            "jobTag":jobTag,
+            "category":category,
+            "subcategory":subcategory,
             "companyName":companyName
         ]
     }

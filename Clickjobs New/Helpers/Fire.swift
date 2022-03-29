@@ -114,19 +114,21 @@ class Fire {
                 Alert.showAlert(forState: .error, message: "Error getting data", duration: 2, userInteration: true)
                 print(err)
             } else {
-//                print("✅")
-//                print(snapshot?.documents)
+                print("✅")
+                print(snapshot?.documents)
                 var vacs: [Vacancy] = []
                 
                 for doc in snapshot!.documents {
                     let doc1 = doc.data() as! [String:String]
-                    let v = Vacancy.init(userId: doc1["userId"]!, infoUrl: doc1["infoUrl"]!, salary: doc1["salary"]!, title: doc1["title"]!, workAddress: doc1["workAddress"]!, jobTypeId: doc1["jobTypeId"]!, jobTag: doc1["jobTag"]!, companyName: doc1["companyName"]!)
+                    let v = Vacancy.init(userId: doc1["userId"]!, infoUrl: doc1["infoUrl"]!, salary: doc1["salary"]!, title: doc1["title"]!, workAddress: doc1["workAddress"]!, category: doc1["category"]!, subcategory: doc1["subcategory"]!, companyName: doc1["companyName"]!)
                     vacs.append(v)
                 }
                 newVacs(vacs)
             }
         }
     }
+    
+    
     
     
     

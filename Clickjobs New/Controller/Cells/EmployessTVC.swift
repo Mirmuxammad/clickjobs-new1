@@ -17,12 +17,12 @@ class EmployessTVC: UITableViewCell {
     @IBOutlet var experienceLbl: UILabel!
     @IBOutlet var locationLbl: UILabel!
     @IBOutlet var jobTypeFirst: UILabel!
-    @IBOutlet var jobTypeSecond: UILabel!
     
     
     @IBOutlet var viewsUp: [SSNeumorphicView]!
     @IBOutlet var containerView: UIView!
     
+    @IBOutlet weak var iconView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -49,9 +49,17 @@ class EmployessTVC: UITableViewCell {
     func update(data: Vacancy) {
         nameLbl.text = data.title
         locationLbl.text = data.workAddress
-        jobTypeFirst.text = data.jobTag
+        jobTypeFirst.text = data.category
         experienceLbl.text = data.salary
-        jobTypeSecond.isHidden = true
+        
+        do {
+            let imgdata = try Data(contentsOf: URL(string: data.subcategory)!)
+            let img = UIImage(data: imgdata)
+            iconView.image = img
+
+        } catch {
+            print("ERROR")
+        }
     }
     
     

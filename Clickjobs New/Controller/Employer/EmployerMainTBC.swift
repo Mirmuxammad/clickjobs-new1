@@ -37,9 +37,5 @@ class EmployerMainTBC: UITabBarController {
         
     }
     
-    
-    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-        Cache.share.setUser(token: nil, isEmployer: true)
-    }
-    
+ 
 }

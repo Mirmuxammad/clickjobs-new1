@@ -11,14 +11,14 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddVacancyVC" customModule="Clickjobs_New" customModuleProvider="target">
             <connections>
-                <outlet property="companyNameField" destination="ESe-ky-VV3" id="d1Q-bf-w8p"/>
-                <outlet property="jobTagField" destination="hfO-fH-2hT" id="54q-pb-tYp"/>
-                <outlet property="salaryField" destination="2ga-ur-JvI" id="50X-Vg-ocs"/>
-                <outlet property="titleField" destination="Ccz-hy-M8g" id="xE2-96-7JE"/>
-                <outlet property="typeOfJobBtn" destination="kIz-AP-WPk" id="wCX-KE-kbR"/>
-                <outlet property="urlField" destination="iCx-Y5-ore" id="glm-RZ-yeV"/>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
-                <outlet property="workAddressField" destination="JFB-9D-SoY" id="GVV-Qm-u2F"/>
+                <outlet property="companyNameField" destination="ESe-ky-VV3" id="ona-Jc-Nka"/>
+                <outlet property="jobCategoryBtn" destination="kIz-AP-WPk" id="MeY-Jc-qge"/>
+                <outlet property="jobSubCategoryBtn" destination="IZW-uc-XAj" id="BSV-A9-L7l"/>
+                <outlet property="salaryField" destination="2ga-ur-JvI" id="Sqm-bx-IrP"/>
+                <outlet property="titleField" destination="Ccz-hy-M8g" id="qqB-YD-Db9"/>
+                <outlet property="urlField" destination="iCx-Y5-ore" id="xLn-T3-4KH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="U7y-1F-FEB"/>
+                <outlet property="workAddressField" destination="hfO-fH-2hT" id="T0a-rT-lSy"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -45,13 +45,8 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Salary" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2ga-ur-JvI" customClass="GeneralTextField" customModule="Clickjobs_New" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="136" width="382" height="52"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
-                                        </textField>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIz-AP-WPk" customClass="SSNeumorphicButton" customModule="SSNeumorphicView">
-                                            <rect key="frame" x="0.0" y="204" width="382" height="52"/>
+                                            <rect key="frame" x="0.0" y="136" width="382" height="52"/>
                                             <color key="backgroundColor" name="defaultGray"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="52" id="vuS-PB-R0f"/>
@@ -59,20 +54,37 @@
                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                             <color key="tintColor" red="0.6705883145" green="0.67058825489999996" blue="0.67058825489999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <inset key="imageEdgeInsets" minX="355" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                            <state key="normal" title="    Type of job" image="chevron.right" catalog="system">
+                                            <state key="normal" title="Job Category" image="chevron.right" catalog="system">
                                                 <color key="titleColor" red="0.72944968939999999" green="0.72934919600000003" blue="0.73333388570000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="semibold"/>
                                             </state>
                                             <connections>
-                                                <action selector="typeOfJobPressed:" destination="-1" eventType="touchUpInside" id="5hG-mU-4ib"/>
+                                                <action selector="categoryPressed:" destination="-1" eventType="touchUpInside" id="83E-KX-fwM"/>
                                             </connections>
                                         </button>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Job Tag" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hfO-fH-2hT" customClass="GeneralTextField" customModule="Clickjobs_New" customModuleProvider="target">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZW-uc-XAj" customClass="SSNeumorphicButton" customModule="SSNeumorphicView">
+                                            <rect key="frame" x="0.0" y="204" width="382" height="52"/>
+                                            <color key="backgroundColor" name="defaultGray"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="52" id="Sip-m6-b2b"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                            <color key="tintColor" red="0.6705883145" green="0.67058825489999996" blue="0.67058825489999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <inset key="imageEdgeInsets" minX="355" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="Job Subcategory" image="chevron.right" catalog="system">
+                                                <color key="titleColor" red="0.72944968939999999" green="0.72934919600000003" blue="0.73333388570000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="semibold"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="subCategoryPressed:" destination="-1" eventType="touchUpInside" id="0ea-lz-1Hf"/>
+                                            </connections>
+                                        </button>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Salary range" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2ga-ur-JvI" customClass="GeneralTextField" customModule="Clickjobs_New" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="272" width="382" height="52"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Work Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JFB-9D-SoY" customClass="GeneralTextField" customModule="Clickjobs_New" customModuleProvider="target">
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Office Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hfO-fH-2hT" customClass="GeneralTextField" customModule="Clickjobs_New" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="340" width="382" height="52"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
@@ -84,23 +96,15 @@
                                         </textField>
                                     </subviews>
                                 </stackView>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDy-dP-cgW">
-                                    <rect key="frame" x="253" y="508" width="145" height="33"/>
-                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                    <state key="normal" title="+ add a paragraph">
-                                        <color key="titleColor" name="btnRed"/>
-                                    </state>
-                                </button>
                                 <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lei-Jk-QUT">
-                                    <rect key="frame" x="16" y="557" width="382" height="52"/>
+                                    <rect key="frame" x="16" y="524" width="382" height="52"/>
                                     <color key="backgroundColor" name="btnRed"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="52" id="icf-v0-fbl"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                    <state key="normal" title="Create">
+                                    <state key="normal" title="Create vacancy">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
                                     <userDefinedRuntimeAttributes>
@@ -109,19 +113,17 @@
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                     <connections>
-                                        <action selector="createBtnTappted:" destination="-1" eventType="touchUpInside" id="OeD-bb-eIh"/>
+                                        <action selector="createBtnTappted:" destination="-1" eventType="touchUpInside" id="Qqn-HW-U1N"/>
                                     </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstAttribute="trailing" secondItem="JDy-dP-cgW" secondAttribute="trailing" constant="16" id="6f2-Do-9QX"/>
                                 <constraint firstAttribute="trailing" secondItem="CPe-xv-7uV" secondAttribute="trailing" constant="16" id="Fup-to-Y1h"/>
-                                <constraint firstItem="Lei-Jk-QUT" firstAttribute="top" secondItem="JDy-dP-cgW" secondAttribute="bottom" constant="16" id="Hvp-xn-Hh8"/>
                                 <constraint firstItem="CPe-xv-7uV" firstAttribute="top" secondItem="w99-Jl-az5" secondAttribute="top" constant="32" id="UTn-Zj-LLc"/>
                                 <constraint firstItem="CPe-xv-7uV" firstAttribute="leading" secondItem="w99-Jl-az5" secondAttribute="leading" constant="16" id="VIh-Md-Zzm"/>
                                 <constraint firstAttribute="trailing" secondItem="Lei-Jk-QUT" secondAttribute="trailing" constant="16" id="Zac-Wg-C1x"/>
-                                <constraint firstItem="JDy-dP-cgW" firstAttribute="top" secondItem="CPe-xv-7uV" secondAttribute="bottom" constant="16" id="bZP-8F-E19"/>
+                                <constraint firstItem="Lei-Jk-QUT" firstAttribute="top" secondItem="CPe-xv-7uV" secondAttribute="bottom" constant="32" id="d9H-Id-WV2"/>
                                 <constraint firstItem="Lei-Jk-QUT" firstAttribute="leading" secondItem="w99-Jl-az5" secondAttribute="leading" constant="16" id="r1z-DH-ADT"/>
                             </constraints>
                         </view>
