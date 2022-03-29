@@ -10,13 +10,8 @@ import UIKit
 class SignInVC: UIViewController {
 
     @IBOutlet var textFields: [GeneralTextField]!
-    
-    
     @IBOutlet weak var siginBtn: UIStackView!
-    
-    
     @IBOutlet weak var scrollView: UIScrollView!
-    
     
     var isEmployer: Bool = true
     

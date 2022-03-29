@@ -37,10 +37,10 @@ class EmployessTVC: UITableViewCell {
             i.backgroundColor = .defaultGray
             i.viewDepthType = .innerShadow
         }
-        containerView.layer.shadowColor = UIColor.systemGray2.cgColor
-        containerView.layer.shadowOpacity = 0.3
+        containerView.layer.shadowColor = UIColor.gray.cgColor
+        containerView.layer.shadowOpacity = 0.5
         containerView.layer.shadowOffset = CGSize.zero
-        containerView.layer.shadowRadius = 6
+        containerView.layer.shadowRadius = 5
         
     }
     
