@@ -6,19 +6,46 @@
 //
 
 import UIKit
-
+/// SIGN UP
 class SignInVC: UIViewController {
 
-    @IBOutlet var textFields: [GeneralTextField]!
-    @IBOutlet weak var siginBtn: UIStackView!
+    @IBOutlet weak var firstNameField: GeneralTextField!
+    @IBOutlet weak var lastNameField: GeneralTextField!
+
+    @IBOutlet weak var occupiedField: GeneralTextField!
+    @IBOutlet weak var companyNameField: GeneralTextField!
+    @IBOutlet weak var phoneField: GeneralTextField!
+    @IBOutlet weak var emailField: GeneralTextField!
+    @IBOutlet weak var tgField: GeneralTextField!
+    @IBOutlet weak var addressField: GeneralTextField!
+    @IBOutlet weak var loginField: GeneralTextField!
+    @IBOutlet weak var passwordField: GeneralTextField!
+
+    var occupied: Bool = false
+    
+    @IBOutlet weak var siginBtn: UIButton!
     @IBOutlet weak var scrollView: UIScrollView!
     
     var isEmployer: Bool = true
     
+    var occupiedData: [String] = ["Yes", "No"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setNavigation()
+        
+        let picker = UIPickerView()
+        picker.delegate = self
+        picker.dataSource = self
+        
+        picker.selectRow(0, inComponent: 0, animated: false)
+
+        self.occupiedField.inputView = picker
+    
+        
+        
     }
+    
 
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -27,10 +54,58 @@ class SignInVC: UIViewController {
     }
     
     
+    
+    
+    @IBAction func btnTapped(_ sender: Any) {
+        
+
+        let user = User(id: "", firstName: firstNameField.text!, lastName: lastNameField.text!, phone: phoneField.text!, email: emailField.text!, tgUsername: tgField.text!, isOccupied: !occupied, resumeUrl: "", savedVacancies: [], login: loginField.text!, password: passwordField.text!, companyID: companyNameField.text!, isEmployer: self.isEmployer)
+        
+        Fire.shared.registerUser(data: user) { newUser in
+            if let newUser = newUser {
+                if newUser.isEmployer {
+                    //EMPLOYER
+                    let vc = EmployerMainTBC()
+                    vc.modalPresentationStyle = .fullScreen
+                    self.present(vc, animated: true)
+                } else {
+                    let vc = EmployeeMainTBC()
+                    vc.modalPresentationStyle = .fullScreen
+                    self.present(vc, animated: true)
+                }
+            }
+        }
+        
+    }
+    
+    
 
 }
 
 
+//MARK: - PICKER VIEW
+extension SignInVC: UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return occupiedData.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return occupiedData[row]
+    }
+    
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        self.occupied = occupiedData[row] == "Yes"
+        self.occupiedField.text = "Are you occupied: " + occupiedData[row]
+    }
+    
+    
+}
 
 
 //MARK: - KEYBOARD METHODS
@@ -38,37 +113,10 @@ extension SignInVC {
     
     func setNavigation() {
         
-        navigationController?.navigationBar.tintColor = .clear
-        navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.9176470637, green: 0.9176470637, blue: 0.9176470637, alpha: 1)
-        
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
-                
-                NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+        navigationController?.navigationBar.tintColor = .btnRed
+        navigationController?.navigationBar.barTintColor = .defaultGray
+        self.title = "Sign up"
     }
     
-    @objc func keyboardWillShow(notification: NSNotification) {
-        
-        navigationController?.navigationBar.isHidden = true
-            if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
-                
-                let h = keyboardSize.height - (self.view.frame.maxY - siginBtn.frame.maxY)
-                
-                if h > 0 {
-                    self.scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: keyboardSize.height, right: 0)
-                }
-            }
-        }
-        
-        @objc func keyboardWillHide(notification: NSNotification) {
-            navigationController?.navigationBar.isHidden = false
-            if self.view.frame.origin.y == 0 {
-                self.scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 50, right: 0)
-            }
-        }
-    
-    @IBAction func gestureTap(_ sender: UITapGestureRecognizer) {
-        for i in textFields {
-            i.resignFirstResponder()
-        }
-    }
+
 }

@@ -15,6 +15,7 @@ class EmployerMainTBC: UITabBarController {
         setup()
     }
     
+    
     private func setup() {
         let vacansies = UINavigationController(rootViewController: VacanciesVC.init(nibName: "VacanciesVC", bundle: nil))
         let plus = UINavigationController(rootViewController: AddVacancyVC.init(nibName: "AddVacancyVC", bundle: nil))
@@ -34,6 +35,11 @@ class EmployerMainTBC: UITabBarController {
         
         self.viewControllers = [vacansies, plus, profile]
         
+    }
+    
+    
+    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        Cache.share.setUser(token: nil, isEmployer: true)
     }
     
 }

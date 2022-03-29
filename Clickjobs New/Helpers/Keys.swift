@@ -10,4 +10,5 @@ import Foundation
 class Keys {
     
     static let userToken: String = "USERTOKEN"
+    static let isUserEmployer: String = "USEREMPLOYER"
 }

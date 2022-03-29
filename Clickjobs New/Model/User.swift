@@ -1,5 +1,5 @@
 //
-//  Employee.swift
+//  User.swift
 //  Clickjobs
 //
 //  Created by Mustafo Asqarov on 21/03/2022.
@@ -16,8 +16,8 @@ struct User {
     var phone: String
     var email: String
     var tgUsername: String
-    var jobTitle: String
-    var isSearchingJob: Bool
+//    var jobTitle: String
+    var isOccupied: Bool
     var resumeUrl: String
     var savedVacancies: [String]
     
@@ -25,7 +25,7 @@ struct User {
     var password: String
     
     var companyID: String
-    var isEmployee: Bool
+    var isEmployer: Bool
 
     
     func getDictionary() -> [String:Any] {
@@ -33,9 +33,9 @@ struct User {
             "companyID":companyID,
             "email":email,
             "firstName":firstName,
-            "isEmployee":isEmployee,
-            "isSearchingJob":isSearchingJob,
-            "jobTitle":jobTitle,
+            "isEmployer":isEmployer,
+            "isOccupied":isOccupied,
+//            "jobTitle":jobTitle,
             "lastName":lastName,
             "login":login,
             "password":password,

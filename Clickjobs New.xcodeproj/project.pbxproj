@@ -43,7 +43,7 @@
 		9468674B27F08897005DDE17 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9468674A27F08897005DDE17 /* Colors.swift */; };
 		9468675427F09ACC005DDE17 /* Fire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9468675327F09ACC005DDE17 /* Fire.swift */; };
 		94F1B4E427F0E2CA00D1148C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94F1B4E327F0E2CA00D1148C /* GoogleService-Info.plist */; };
-		94F1B4E627F0E51C00D1148C /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1B4E527F0E51C00D1148C /* Employee.swift */; };
+		94F1B4E627F0E51C00D1148C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1B4E527F0E51C00D1148C /* User.swift */; };
 		94F1B4E827F0E55500D1148C /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1B4E727F0E55500D1148C /* Cache.swift */; };
 		94F1B4EA27F0E58B00D1148C /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1B4E927F0E58B00D1148C /* Keys.swift */; };
 		94F1B4EF27F0EA2700D1148C /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F1B4EE27F0EA2700D1148C /* Alert.swift */; };
@@ -96,7 +96,7 @@
 		9468674A27F08897005DDE17 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		9468675327F09ACC005DDE17 /* Fire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fire.swift; sourceTree = "<group>"; };
 		94F1B4E327F0E2CA00D1148C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		94F1B4E527F0E51C00D1148C /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		94F1B4E527F0E51C00D1148C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		94F1B4E727F0E55500D1148C /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 		94F1B4E927F0E58B00D1148C /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		94F1B4ED27F0EA2700D1148C /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
@@ -181,10 +181,10 @@
 		9468674F27F098BB005DDE17 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				946866A027F0735B005DDE17 /* AppDelegate.swift */,
 				94F1B4F827F0F23500D1148C /* Employer */,
 				94F1B4F727F0F22C00D1148C /* Employee */,
 				9468674E27F093B3005DDE17 /* Cells */,
-				946866A027F0735B005DDE17 /* AppDelegate.swift */,
 				9468672427F0852E005DDE17 /* WalkVC.swift */,
 				9468672627F0852E005DDE17 /* SignInVC.swift */,
 				9468672727F0852E005DDE17 /* SignUpVC.swift */,
@@ -226,7 +226,7 @@
 		9468675127F098E7005DDE17 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				94F1B4E527F0E51C00D1148C /* Employee.swift */,
+				94F1B4E527F0E51C00D1148C /* User.swift */,
 				94F1B4FD27F0F5C100D1148C /* Vacancy.swift */,
 			);
 			path = Model;
@@ -441,7 +441,7 @@
 				9468674527F08674005DDE17 /* PasswordVC.swift in Sources */,
 				94F1B4F027F0EA2700D1148C /* Loader.swift in Sources */,
 				946866DF27F084FF005DDE17 /* EditVC.swift in Sources */,
-				94F1B4E627F0E51C00D1148C /* Employee.swift in Sources */,
+				94F1B4E627F0E51C00D1148C /* User.swift in Sources */,
 				94F1B4EA27F0E58B00D1148C /* Keys.swift in Sources */,
 				9468671427F08520005DDE17 /* EmployessDetailVC.swift in Sources */,
 				9468674B27F08897005DDE17 /* Colors.swift in Sources */,

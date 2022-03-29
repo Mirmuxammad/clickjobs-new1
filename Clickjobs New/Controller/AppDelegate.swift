@@ -7,6 +7,8 @@
 
 import UIKit
 import Firebase
+import IQKeyboardManagerSwift
+
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,10 +19,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         window = UIWindow()
         
-        if Cache.share.isUserLogged() {
-            let vc = EmployerMainTBC()
-            window?.rootViewController = vc
+        IQKeyboardManager.shared.enable = true
+
+        
+        if let _ = Cache.share.getUserToken() {
+            if Cache.share.isUserEmployer() {
+                //EMPLOYER
+                let vc = EmployerMainTBC()
+                window?.rootViewController = vc
+            } else {
+                let vc = EmployeeMainTBC()
+                window?.rootViewController = vc
+            }
         } else {
+            //User not logged in
             let walk = WalkVC(nibName: "WalkVC", bundle: nil)
             let vc = UINavigationController(rootViewController: walk)
             window?.rootViewController = vc

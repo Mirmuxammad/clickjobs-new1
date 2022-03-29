@@ -9,5 +9,7 @@ pod 'Firebase/Auth'
 pod 'Firebase/Firestore'
 pod 'lottie-ios'
 pod 'SwiftyJSON'
+pod 'IQKeyboardManagerSwift'
+
 
 end

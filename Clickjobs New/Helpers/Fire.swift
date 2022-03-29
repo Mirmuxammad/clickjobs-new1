@@ -15,21 +15,21 @@ class Fire {
     private var db = Firestore.firestore()
     
     
-    
-    func registerEmployee(newUser: User, createdUser: @escaping (User?) -> Void) {
+    ///DONE
+    func registerUser(data: User, createdUser: @escaping (User?) -> Void) {
         
         Loader.start()
         
-        self.isUserExist(login: newUser.login, password: newUser.password, withLoader: false) { isUserExist in
+        self.isUserExist(login: data.login, password: data.password, withLoader: false) { isUserExist in
             if isUserExist {
                 print("User already exists")
                 createdUser(nil)
-                Alert.showAlert(forState: .error, message: "User with \(newUser.login) is already exists", duration: 3, userInteration: true)
+                Alert.showAlert(forState: .error, message: "User with \(data.login) is already exists", duration: 3, userInteration: true)
                 Loader.stop()
             } else {
                 //Create new user
                 var ref: DocumentReference? = nil
-                ref = self.db.collection("user").addDocument(data: newUser.getDictionary()) { err in
+                ref = self.db.collection("user").addDocument(data: data.getDictionary()) { err in
                     Loader.stop()
                     
                     if let err = err {
@@ -40,9 +40,9 @@ class Fire {
                         print("Document added with ID: \(ref!.documentID)")
                         
                         Alert.showAlert(forState: .success, message: "Welcome to the board!", duration: 3, userInteration: true)
-                        var newU = newUser
+                        var newU = data
                         newU.id = ref!.documentID
-                        Cache.share.setUser(token: ref!.documentID)
+                        Cache.share.setUser(token: ref!.documentID, isEmployer: data.isEmployer)
                         createdUser(newU)
                     }
                 }
@@ -52,6 +52,7 @@ class Fire {
     }
     
     
+    ///DONE
     func isUserExist(login: String, password: String, withLoader: Bool = true, completion: @escaping (Bool) -> Void) {
         let users = db.collection("user")
         
@@ -65,11 +66,16 @@ class Fire {
             if let snap = snapshot {
                 if snap.documents.isEmpty {
                     completion(false)
-                    Alert.showAlert(forState: .error, message: "User with these crendentials not found!", duration: 3, userInteration: true)
+                    if withLoader {
+                        Alert.showAlert(forState: .error, message: "User with these crendentials not found!", duration: 3, userInteration: true)
+                    }
                 } else {
                     print("✅")
                     completion(true)
-                    Cache.share.setUser(token: snap.documents.first!.documentID)
+                    let doc1 = snap.documents.first!.data()
+
+                    Cache.share.setUser(token: snap.documents.first!.documentID, isEmployer: doc1["isEmployer"] as? Bool ?? false)
+                    
                 }
             } else {
                 Alert.showAlert(forState: .error, message: "Unknown error occured, please try again", duration: 3, userInteration: true)
@@ -108,8 +114,8 @@ class Fire {
                 Alert.showAlert(forState: .error, message: "Error getting data", duration: 2, userInteration: true)
                 print(err)
             } else {
-                print("✅")
-                print(snapshot?.documents)
+//                print("✅")
+//                print(snapshot?.documents)
                 var vacs: [Vacancy] = []
                 
                 for doc in snapshot!.documents {
@@ -121,5 +127,8 @@ class Fire {
             }
         }
     }
+    
+    
+    
     
 }

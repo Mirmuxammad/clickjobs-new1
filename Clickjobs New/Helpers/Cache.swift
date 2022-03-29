@@ -14,8 +14,8 @@ class Cache {
     
     
     
-    func isUserLogged() -> Bool {
-        return UserDefaults.standard.string(forKey: Keys.userToken) != nil
+    func isUserEmployer() -> Bool {
+        return UserDefaults.standard.bool(forKey: Keys.isUserEmployer)
     }
     
     func getUserToken() -> String? {
@@ -23,10 +23,12 @@ class Cache {
     }
     
     ///This method is for saving user session
-    func setUser(token: String?) {
+    func setUser(token: String?, isEmployer: Bool) {
         UserDefaults.standard.set(token, forKey: Keys.userToken)
+        UserDefaults.standard.set(isEmployer, forKey: Keys.isUserEmployer)
     }
     
+        
     
     
     

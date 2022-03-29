@@ -60,7 +60,7 @@ class SignUpVC: UIViewController {
     
     func setNavBar() {
         navigationController?.navigationBar.tintColor = .clear
-        navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.9176470637, green: 0.9176470637, blue: 0.9176470637, alpha: 1)
+        navigationController?.navigationBar.barTintColor = .defaultGray
     }
     
 }
