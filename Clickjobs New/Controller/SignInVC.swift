@@ -58,6 +58,8 @@ class SignInVC: UIViewController {
     
     @IBAction func btnTapped(_ sender: Any) {
         
+        UserDefaults.standard.set(true, forKey: "status")
+              
 
         let user = User(id: "", firstName: firstNameField.text!, lastName: lastNameField.text!, phone: phoneField.text!, email: emailField.text!, tgUsername: tgField.text!, isOccupied: !occupied, resumeUrl: "", savedVacancies: [], login: loginField.text!, password: passwordField.text!, companyID: companyNameField.text!, isEmployer: self.isEmployer)
         

@@ -22,7 +22,7 @@ class NotificationsVC: UIViewController {
                 i.viewNeumorphicCornerRadius = 13
                 i.viewNeumorphicShadowRadius = 0
                 i.viewNeumorphicShadowOffset = .init(width: 3, height: 2)
-                i.viewNeumorphicMainColor = UIColor.defaultGray.cgColor
+                i.viewNeumorphicMainColor = UIColor(named: "defaultGray")?.cgColor
             }
         }
     }
@@ -39,7 +39,17 @@ class NotificationsVC: UIViewController {
         super.viewDidLoad()
         title = "Notifications"
         navigationItem.backBarButtonItem?.title = "Hello"
+        navigationController?.navigationBar.prefersLargeTitles = false
         self.view.backgroundColor = .defaultGray
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = true
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.tabBarController?.tabBar.isHidden = false
     }
     
     @IBAction func switchTapped(_ sender: UISwitch) {
@@ -60,9 +70,4 @@ class NotificationsVC: UIViewController {
 
         }
     }
-   
-    
-    
-    
-    
 }

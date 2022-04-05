@@ -23,8 +23,18 @@ class PasswordVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(named: "solid")
+        self.view.backgroundColor = .defaultGray
+        navigationController?.navigationBar.prefersLargeTitles = false
         title = "Password"
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = true
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.tabBarController?.tabBar.isHidden = false
     }
 }
 

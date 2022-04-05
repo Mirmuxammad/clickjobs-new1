@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F351C4927FC468D0032D351 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F351C4727FC468D0032D351 /* SettingsVC.swift */; };
+		7F351C4A27FC468D0032D351 /* SettingsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F351C4827FC468D0032D351 /* SettingsVC.xib */; };
 		946866A127F0735B005DDE17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946866A027F0735B005DDE17 /* AppDelegate.swift */; };
 		946866AA27F0735C005DDE17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 946866A927F0735C005DDE17 /* Assets.xcassets */; };
 		946866AD27F0735C005DDE17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 946866AB27F0735C005DDE17 /* LaunchScreen.storyboard */; };
@@ -57,6 +59,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F351C4727FC468D0032D351 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		7F351C4827FC468D0032D351 /* SettingsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsVC.xib; sourceTree = "<group>"; };
 		92DE3BBA8F5AB0EF5ADC76B3 /* Pods_Clickjobs_New.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clickjobs_New.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9468669D27F0735B005DDE17 /* Clickjobs New.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clickjobs New.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		946866A027F0735B005DDE17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +126,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F351C4B27FC48FE0032D351 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				7F351C4727FC468D0032D351 /* SettingsVC.swift */,
+				9468673F27F08674005DDE17 /* PasswordVC.swift */,
+				9468673B27F08674005DDE17 /* NotificationsVC.swift */,
+				9468673C27F08674005DDE17 /* LanguagesVC.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		7F351C4C27FC49110032D351 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				7F351C4827FC468D0032D351 /* SettingsVC.xib */,
+				9468673E27F08674005DDE17 /* PasswordVC.xib */,
+				9468673D27F08674005DDE17 /* NotificationsVC.xib */,
+				9468673A27F08674005DDE17 /* LanguagesVC.xib */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		9468669427F0735A005DDE17 = {
 			isa = PBXGroup;
 			children = (
@@ -184,13 +210,11 @@
 				946866A027F0735B005DDE17 /* AppDelegate.swift */,
 				94F1B4F827F0F23500D1148C /* Employer */,
 				94F1B4F727F0F22C00D1148C /* Employee */,
+				7F351C4B27FC48FE0032D351 /* Settings */,
 				9468674E27F093B3005DDE17 /* Cells */,
 				9468672427F0852E005DDE17 /* WalkVC.swift */,
 				9468672627F0852E005DDE17 /* SignInVC.swift */,
 				9468672727F0852E005DDE17 /* SignUpVC.swift */,
-				9468673C27F08674005DDE17 /* LanguagesVC.swift */,
-				9468673B27F08674005DDE17 /* NotificationsVC.swift */,
-				9468673F27F08674005DDE17 /* PasswordVC.swift */,
 				9468670927F08520005DDE17 /* EmployessDetailVC.swift */,
 				946866FA27F08519005DDE17 /* ResumeVC.swift */,
 				946866D827F084FF005DDE17 /* ProfileVC.swift */,
@@ -204,13 +228,11 @@
 			children = (
 				94F1B4F627F0F22600D1148C /* Employer */,
 				94F1B4F527F0F21C00D1148C /* Employee */,
+				7F351C4C27FC49110032D351 /* Settings */,
 				9468675227F09918005DDE17 /* Cells */,
 				9468672527F0852E005DDE17 /* WalkVC.xib */,
 				9468672827F0852E005DDE17 /* SignInVC.xib */,
 				9468672927F0852E005DDE17 /* SignUpVC.xib */,
-				9468673A27F08674005DDE17 /* LanguagesVC.xib */,
-				9468673D27F08674005DDE17 /* NotificationsVC.xib */,
-				9468673E27F08674005DDE17 /* PasswordVC.xib */,
 				9468670C27F08520005DDE17 /* EmployessDetailVC.xib */,
 				946866FD27F08519005DDE17 /* ResumeVC.xib */,
 				946866EB27F08512005DDE17 /* VacanciesVC.xib */,
@@ -360,6 +382,7 @@
 				94F1B4FC27F0F2CD00D1148C /* AddVacancyVC.xib in Resources */,
 				9468671727F08520005DDE17 /* EmployessDetailVC.xib in Resources */,
 				946866DE27F084FF005DDE17 /* ProfileVC.xib in Resources */,
+				7F351C4A27FC468D0032D351 /* SettingsVC.xib in Resources */,
 				9468674427F08674005DDE17 /* PasswordVC.xib in Resources */,
 				9468671927F08520005DDE17 /* EmployessVC.xib in Resources */,
 				9468672F27F0852E005DDE17 /* SignUpVC.xib in Resources */,
@@ -435,6 +458,7 @@
 				94F1B4E827F0E55500D1148C /* Cache.swift in Sources */,
 				946866F627F08512005DDE17 /* VacanciesDesVC.swift in Sources */,
 				94F1B4F427F0F18800D1148C /* EmployerMainTBC.swift in Sources */,
+				7F351C4927FC468D0032D351 /* SettingsVC.swift in Sources */,
 				946866F427F08512005DDE17 /* VacanciesVC.swift in Sources */,
 				9468671027F08520005DDE17 /* EmployessVC.swift in Sources */,
 				9468671827F08520005DDE17 /* EmployessTVC.swift in Sources */,

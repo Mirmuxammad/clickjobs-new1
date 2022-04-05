@@ -19,7 +19,7 @@ class EmployerMainTBC: UITabBarController {
     private func setup() {
         let vacansies = UINavigationController(rootViewController: VacanciesVC.init(nibName: "VacanciesVC", bundle: nil))
         let plus = UINavigationController(rootViewController: AddVacancyVC.init(nibName: "AddVacancyVC", bundle: nil))
-        let profile = UINavigationController(rootViewController: VacanciesVC.init(nibName: "VacanciesVC", bundle: nil))
+        let profile = UINavigationController(rootViewController: ProfileVC.init(nibName: "ProfileVC", bundle: nil))
         
         vacansies.title = "Vacancies"
         let vacanciesBarItem = UITabBarItem(title: "Employees", image: UIImage(systemName: "house.fill"), selectedImage: UIImage(systemName: "house.fill"))
@@ -31,8 +31,9 @@ class EmployerMainTBC: UITabBarController {
         profile.tabBarItem = profileBarItem
         
         UITabBar.appearance().tintColor = UIColor(red: 236/255, green: 33/255, blue: 36/255, alpha: 0.8)
-        UITabBar.appearance().barTintColor = UIColor(red: 235/255, green: 236/255, blue: 240/255, alpha: 1)
+        UITabBar.appearance().barTintColor = .defaultGray
         
+      
         self.viewControllers = [vacansies, plus, profile]
         
     }

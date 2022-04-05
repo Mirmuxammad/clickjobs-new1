@@ -29,7 +29,11 @@ class EditVC: UIViewController {
     @IBOutlet weak var cityTF: GeneralTextField!
     @IBOutlet weak var companyTF: GeneralTextField!
     @IBOutlet weak var emailTF: GeneralTextField!
-    @IBOutlet weak var phoneTF: GeneralTextField!
+    @IBOutlet weak var phoneTF: GeneralTextField! {
+        didSet {
+            phoneTF.delegate = self
+        }
+    }
    
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var saveBtn: UIButton!
@@ -37,51 +41,74 @@ class EditVC: UIViewController {
     var delegate : EditVCDelegate!
     override func viewDidLoad() {
         super.viewDidLoad()
-
        otherSetups()
-//        navigationItem.largeTitleDispla   yMode = .never
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = true
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.tabBarController?.tabBar.isHidden = false
     }
    
     func otherSetups() {
          title = "Personal Data"
-        self.view.backgroundColor = #colorLiteral(red: 0.8979505897, green: 0.8981012702, blue: 0.8979307413, alpha: 1)
-         conteinerView.backgroundColor = UIColor(named: "solid")
-         saveBtn.backgroundColor = AppColor.shared.clickRed
+        self.view.backgroundColor = .defaultGray
+        conteinerView.backgroundColor = .defaultGray
+        saveBtn.backgroundColor = .btnRed
     }
     
 
     @IBAction func saveBtnTapped(_ sender: Any) {
         if fullnameTF.text?.isEmpty == false && cityTF.text?.isEmpty == false && phoneTF.text?.isEmpty == false &&  companyTF.text?.isEmpty == false {
-            delegate?.editInformation(newInfo: PersonInfos(fullname: fullnameTF.text!, city: cityTF.text!, compyany: companyTF.text!, email: emailTF.text!, phone: phoneTF.text!))
+            
+            delegate?.editInformation(newInfo:
+                                        PersonInfos(
+                                                    fullname: fullnameTF.text!,
+                                                    city: cityTF.text!,
+                                                    compyany: companyTF.text!,
+                                                    email: emailTF.text!,
+                                                    phone: phoneTF.text!)
+                                                    )
             navigationController?.popViewController(animated: true)
             
         }
     }
 }
 
-
-//MARK: - Keyboard handiling methods -
-extension EditVC {
-    func setupKeyboard(){
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+//MARK: - Text filed delegate & number formatter
+extension EditVC: UITextFieldDelegate {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        guard let text = textField.text else { return false }
+        let newString = (text as NSString).replacingCharacters(in: range, with: string)
+        textField.text = format(with: "+XXX (XX) XXX-XX-XX", phone: newString)
+        return false
     }
     
-    @objc func keyboardWillShow(notification: NSNotification) {
-        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
-           
-            let h = keyboardSize.height - (self.view.frame.maxY - saveBtn.frame.maxY)
-            if h > 0 {
-                self.scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: keyboardSize.height, right: 0)
-                
+    /// mask example: `+XXX (XX) XXX-XX-XX`
+    func format(with mask: String, phone: String) -> String {
+        let numbers = phone.replacingOccurrences(of: "[^0-9]", with: "", options: .regularExpression)
+        var result = ""
+        var index = numbers.startIndex // numbers iterator
+
+        // iterate over the mask characters until the iterator of numbers ends
+        for ch in mask where index < numbers.endIndex {
+            if ch == "X" {
+                // mask requires a number in this place, so take the next one
+                result.append(numbers[index])
+
+                // move numbers iterator to the next index
+                index = numbers.index(after: index)
+
+            } else {
+                result.append(ch) // just append a mask character
             }
         }
+        return result
     }
-
-    @objc func keyboardWillHide(notification: NSNotification) {
-        if view.frame.maxY != 0 {
-            self.scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-        }
-    }
-    
 }
+
+
+

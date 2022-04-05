@@ -36,8 +36,17 @@ class LanguagesVC: UIViewController {
         super.viewDidLoad()
         title = "Languages"
         self.view.backgroundColor = .defaultGray
+        navigationController?.navigationBar.prefersLargeTitles = false
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = true
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.tabBarController?.tabBar.isHidden = false
+    }
     
     @IBAction func langsTapped(_ sender: UIButton) {
         for i in languagesBtns.enumerated(){
@@ -54,8 +63,4 @@ class LanguagesVC: UIViewController {
             }
         }
     }
-    
-
-    
-
 }

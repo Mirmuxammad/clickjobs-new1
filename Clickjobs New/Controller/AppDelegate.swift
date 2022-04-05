@@ -37,7 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let vc = UINavigationController(rootViewController: walk)
             window?.rootViewController = vc
         }
-        
+       
         window?.makeKeyAndVisible()
         return true
     }

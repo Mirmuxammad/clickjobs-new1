@@ -8,52 +8,46 @@
 import UIKit
 import SSNeumorphicView
 
-class AppColor {
-    static var shared: AppColor = AppColor()
-    
-    
-    var clickRed = #colorLiteral(red: 0.9435839057, green: 0.1135162041, blue: 0.1085523143, alpha: 1)
-    var clickBlack = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-    var clickGray = #colorLiteral(red: 0.9205921292, green: 0.9257189631, blue: 0.942661047, alpha: 1)
-}
-
-
 class ProfileVC: UIViewController {
-   
     @IBOutlet weak var continerView: UIView!
-    
     @IBOutlet var outerViews: [SSNeumorphicView]!
+    
+    @IBOutlet weak var savedCountLbl: UILabel!
+    @IBOutlet weak var vacanciesCountlbl: UILabel!
+   
     @IBOutlet var lebels: [UILabel]!
     
     @IBOutlet weak var editBtn: UIButton!
     
     @IBOutlet weak var fullNameLbl: UILabel!
-    @IBOutlet weak var companyNameLbl: UILabel!
+    @IBOutlet weak var numberLbl: UILabel!
     @IBOutlet weak var emailLbl: UILabel!
     @IBOutlet weak var locationLbl: UILabel!
     
     @IBOutlet weak var fullNameView: SSNeumorphicView!
-    @IBOutlet weak var companyNameView: SSNeumorphicView!
+    @IBOutlet weak var numberView: SSNeumorphicView!
     @IBOutlet weak var emailView: SSNeumorphicView!
     @IBOutlet weak var locationView: SSNeumorphicView!
+        
+    @IBOutlet weak var vacanView: SSNeumorphicView!
+    @IBOutlet weak var savedView: SSNeumorphicView!
     
-    @IBOutlet weak var hiiddinStack: UIStackView!
-    
+    @IBOutlet var btnViews: [SSNeumorphicView]!
     override func viewDidLoad() {
         super.viewDidLoad()
- 
-       
+
         navigationSetup()
         backButtonSetup()
         viewsSetup()
         lblsSetup()
+       
     }
 
     func lblsSetup() {
         for i in lebels {
             i.textColor = .lblBlack
         }
-        editBtn.tintColor = AppColor.shared.clickRed
+        editBtn.tintColor = .btnRed
     }
     
     func viewsSetup() {
@@ -62,33 +56,41 @@ class ProfileVC: UIViewController {
             i.viewNeumorphicCornerRadius = 16
             i.viewNeumorphicShadowRadius = 0
             i.viewNeumorphicShadowOffset = .init(width: 2, height: 2)
-            i.viewNeumorphicMainColor = UIColor(named: "solid")?.cgColor
+            i.viewNeumorphicMainColor = UIColor(named: "defaultGray")?.cgColor
         }
-        continerView.backgroundColor = UIColor(named: "solid")
+        for i in btnViews {
+            i.viewDepthType = .outerShadow
+            i.viewNeumorphicCornerRadius = 13
+            i.viewNeumorphicShadowRadius = 0
+            i.viewNeumorphicShadowOffset = .init(width: 2, height: 2)
+            i.viewNeumorphicMainColor = UIColor(named: "defaultGray")?.cgColor
+        }
+        
+        continerView.backgroundColor = .defaultGray
     }
     
     func backButtonSetup() {
         navigationItem.backButtonTitle = "Back"
-        self.navigationController?.navigationBar.tintColor = AppColor.shared.clickRed
+        self.navigationController?.navigationBar.tintColor = .btnRed
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
-//        navigationController?.navigationBar.prefersLargeTitles = false
+        navigationController?.navigationBar.prefersLargeTitles = false
     }
     
     func navigationSetup() {
         title = "Profile"
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.largeTitleDisplayMode = .always
-        self.view.backgroundColor = UIColor(named: "solid")
-        navigationController?.navigationBar.barTintColor =  UIColor(named: "solid")
+        self.view.backgroundColor = .defaultGray
+        navigationController?.navigationBar.barTintColor =  .defaultGray
         _ = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(settingBtnTapped))
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Settings", style: .plain, target: self, action: #selector(settingBtnTapped))
     }
@@ -100,8 +102,19 @@ class ProfileVC: UIViewController {
     }
     
     @objc func settingBtnTapped() {
+        let vc = SettingsVC.init(nibName: "SettingsVC", bundle: nil)
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
+    @IBAction func vacanciesBtntapped(_ sender: Any) {
+        let vc = VacanciesVC.init(nibName: "VacanciesVC", bundle: nil)
+        vc.searchController.searchBar.isHidden = true
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func savedBtnTapepd(_ sender: Any) {
         
-        //    print("right bar button action")
     }
 }
 
@@ -111,7 +124,9 @@ extension ProfileVC: EditVCDelegate {
         fullNameLbl.text = newInfo.fullname
         locationLbl.text = newInfo.city
         emailLbl.text = newInfo.email
-        companyNameLbl.text = newInfo.compyany
+        numberLbl.text = newInfo.phone
     }
 }
+
+
 

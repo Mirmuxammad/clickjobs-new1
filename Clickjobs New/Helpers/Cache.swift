@@ -27,10 +27,5 @@ class Cache {
         UserDefaults.standard.set(token, forKey: Keys.userToken)
         UserDefaults.standard.set(isEmployer, forKey: Keys.isUserEmployer)
     }
-    
-        
-    
-    
-    
-    
+
 }
