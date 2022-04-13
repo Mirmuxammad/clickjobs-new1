@@ -38,11 +38,13 @@ class VacanciesVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setNavBar()
+        backButtonSetup()
 
     }
     
-    @objc func filterTapped(sender: UIBarButtonItem) {
-        
+    @objc func belltapped(sender: UIBarButtonItem) {
+        let vc = BellVC.init(nibName: "BellVC", bundle: nil)
+        navigationController?.pushViewController(vc, animated: true)
     }
 
 }
@@ -75,6 +77,11 @@ extension VacanciesVC: UITableViewDelegate, UITableViewDataSource {
         self.navigationController?.navigationBar.barTintColor = .defaultGray
     }
     
+    func backButtonSetup() {
+        navigationItem.backButtonTitle = "Back"
+        self.navigationController?.navigationBar.tintColor = .btnRed
+    }
+    
 }
 //MARK: -UINavigationControllerBar methodos-
 extension VacanciesVC {
@@ -93,7 +100,8 @@ extension VacanciesVC {
         navigationItem.hidesSearchBarWhenScrolling = false
         navigationItem.searchController = searchController
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Filter", style: .plain, target: self, action: #selector(filterTapped(sender:)))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Filter", style: .plain, target: self, action: #selector(belltapped(sender:)))
+        navigationItem.rightBarButtonItem?.image = UIImage(systemName: "bell")
         navigationItem.rightBarButtonItem?.tintColor = .btnRed
         navigationItem.backBarButtonItem?.tintColor = .btnRed
     }

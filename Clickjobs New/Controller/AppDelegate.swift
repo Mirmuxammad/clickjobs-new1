@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         IQKeyboardManager.shared.enable = true
 
-        
+//
         if let _ = Cache.share.getUserToken() {
             if Cache.share.isUserEmployer() {
                 //EMPLOYER
@@ -37,6 +37,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let vc = UINavigationController(rootViewController: walk)
             window?.rootViewController = vc
         }
+//        let vc = AboutVacanciesVC.init(nibName: "AboutVacanciesVC", bundle: nil)
+//        let navVc = UINavigationController(rootViewController: vc)
+//        window?.rootViewController = navVc
        
         window?.makeKeyAndVisible()
         return true

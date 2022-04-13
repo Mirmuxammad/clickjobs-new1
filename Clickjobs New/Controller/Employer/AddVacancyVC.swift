@@ -9,13 +9,12 @@ import UIKit
 import SSNeumorphicView
 
 class AddVacancyVC: UIViewController {
-    
+   
     @IBOutlet weak var titleField: GeneralTextField!
     @IBOutlet weak var companyNameField: GeneralTextField!
     @IBOutlet weak var salaryField: GeneralTextField!
     @IBOutlet weak var workAddressField: GeneralTextField!
     @IBOutlet weak var urlField: GeneralTextField!
-
     
     @IBOutlet weak var jobCategoryBtn: SSNeumorphicButton!
     @IBOutlet weak var jobSubCategoryBtn: SSNeumorphicButton!
@@ -29,69 +28,85 @@ class AddVacancyVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
                 
-        
+        btnsSetup()
     }
+    
     
     
     
     @IBAction func categoryPressed(_ sender: Any) {
-        let alert = UIAlertController(title: "Choose a category", message: nil, preferredStyle: .actionSheet)
-        let remote = UIAlertAction(title: "Frontend", style: .default) { _ in
-            self.lastCategory = "Frontend"
-            self.jobCategoryBtn.setTitle(self.lastCategory, for: .normal)
-        }
         
-        let offline = UIAlertAction(title: "Backend", style: .default) { _ in
-            self.lastCategory = "Backend"
-            self.jobCategoryBtn.setTitle(self.lastCategory, for: .normal)
-        }
+        let vc = JobCategoryVC.init(nibName: "JobCategoryVC", bundle: nil)
+        vc.delegate = self
+        navigationController?.pushViewController(vc, animated: true)
         
-        let cancel = UIAlertAction(title: "Cancel", style: .cancel) { _ in
-        }
-        
-        alert.addAction(remote)
-        alert.addAction(offline)
-        alert.addAction(cancel)
-        self.present(alert, animated: true)
     }
-    
     
     @IBAction func subCategoryPressed(_ sender: Any) {
-        let alert = UIAlertController(title: "Choose subcategory", message: nil, preferredStyle: .actionSheet)
-        let remote = UIAlertAction(title: "Vue.js", style: .default) { _ in
-            self.lastSubcategory = "http://assets.stickpng.com/thumbs/58482acecef1014c0b5e4a1e.png"
-            self.jobSubCategoryBtn.setTitle(self.lastSubcategory, for: .normal)
-        }
-        
-        let offline = UIAlertAction(title: "Django", style: .default) { _ in
-            self.lastSubcategory = "https://framagit.org/uploads/-/system/project/avatar/28062/django.png"
-            self.jobSubCategoryBtn.setTitle(self.lastSubcategory, for: .normal)
-        }
-        
-        let cancel = UIAlertAction(title: "Cancel", style: .cancel) { _ in
-        }
-        
-        alert.addAction(remote)
-        alert.addAction(offline)
-        alert.addAction(cancel)
-        self.present(alert, animated: true)
+        let vc = SubCategoryVC.init(nibName: "SubCategoryVC", bundle: nil)
+        vc.delegate = self
+        navigationController?.pushViewController(vc, animated: true)
     }
-    
-    
     
     @IBAction func createBtnTappted(_ sender: Any) {
         if let token = Cache.share.getUserToken() {
             let newV = Vacancy(userId: token, infoUrl: urlField.text!, salary: "💸 \(self.salaryField.text!)", title: self.titleField.text!, workAddress: "📍 \(self.workAddressField.text!)", category: self.lastCategory, subcategory: self.lastSubcategory, companyName: "🏢 \(self.companyNameField.text!)")
             Fire.shared.addVacancy(vac: newV) { done in
-                
+                self.alerVcSetup()
             }
 
         } else {
             //TODO: - LOGIN PAGE GA OTVORISH KERAK.
         }
-        
+    }
+
+    func backButtonSetup() {
+        navigationItem.backButtonTitle = "Back"
+        self.navigationController?.navigationBar.tintColor = .btnRed
     }
     
+    func btnsSetup() {
+        jobCategoryBtn.btnDepthType = .outerShadow
+        jobCategoryBtn.btnNeumorphicCornerRadius = 13
+        jobCategoryBtn.btnNeumorphicShadowOffset = .init(width: 2, height: 2)
+        jobCategoryBtn.btnNeumorphicShadowRadius = 0
+        jobCategoryBtn.btnNeumorphicLayerMainColor = UIColor(named: "defaultGray")?.cgColor
+        
+        jobSubCategoryBtn.btnDepthType = .outerShadow
+        jobSubCategoryBtn.btnNeumorphicCornerRadius = 13
+        jobSubCategoryBtn.btnNeumorphicShadowOffset = .init(width: 2, height: 2)
+        jobSubCategoryBtn.btnNeumorphicShadowRadius = 0
+        jobSubCategoryBtn.btnNeumorphicLayerMainColor = UIColor(named: "defaultGray")?.cgColor
+        
+     
+    }
     
+    }
 
+//MARK: Calling protocol
+extension AddVacancyVC: JobCategoryVCDelegate {
+    func jobcategoryTapped(choseJob: JobCategory) {
+        self.jobCategoryBtn.setTitle(choseJob.jobType, for: .normal)
+    }
 }
+
+extension AddVacancyVC: SubCategoryVCDelegate {
+    func jobcategoryTapped(choseJob: Techlogy) {
+        self.jobSubCategoryBtn.setTitle(choseJob.techname, for: .normal)
+    }
+}
+
+//MARK: Aler vc Setup
+extension AddVacancyVC {
+    func alerVcSetup() {
+        
+        let alert = UIAlertController(title: "Created!", message: "The vacancy has been created!", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Back to menu", style: .destructive, handler: { (_) in
+            self.navigationController?.popToRootViewController(animated: true)
+        }))
+        self.present(alert, animated: true, completion: {
+            })
+    }
+}
+
+
