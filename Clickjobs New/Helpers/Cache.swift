@@ -22,6 +22,12 @@ class Cache {
         return UserDefaults.standard.string(forKey: Keys.userToken)
     }
     
+    func logoutCleanUp() {
+        UserDefaults.standard.set(nil, forKey: Keys.userToken)
+        UserDefaults.standard.set(nil, forKey: Keys.isUserEmployer)
+
+    }
+    
     ///This method is for saving user session
     func setUser(token: String?, isEmployer: Bool) {
         UserDefaults.standard.set(token, forKey: Keys.userToken)

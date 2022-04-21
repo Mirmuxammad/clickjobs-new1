@@ -44,8 +44,8 @@ struct User {
         self.address = address
     }
 
-    init(dictionaryData: [String:Any]) {
-        self.id = (dictionaryData["id"] as? String) ?? ""
+    init(dictionaryData: [String:Any], docId: String) {
+        self.id = docId
         self.firstName = (dictionaryData["firstName"] as? String) ?? ""
         self.lastName = (dictionaryData["lastName"] as? String) ?? ""
         self.phone = (dictionaryData["phone"] as? String) ?? ""

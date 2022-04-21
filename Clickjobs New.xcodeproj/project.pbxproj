@@ -226,8 +226,8 @@
 		9468675027F098E0005DDE17 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				94ABC52D2811088D009A51AD /* Employee */,
 				94F1B4F627F0F22600D1148C /* Employer */,
-				94F1B4F527F0F21C00D1148C /* Employee */,
 				7F351C4C27FC49110032D351 /* Settings */,
 				9468675227F09918005DDE17 /* Cells */,
 				9468672527F0852E005DDE17 /* WalkVC.xib */,
@@ -235,8 +235,6 @@
 				9468672927F0852E005DDE17 /* SignUpVC.xib */,
 				9468670C27F08520005DDE17 /* EmployessDetailVC.xib */,
 				946866FD27F08519005DDE17 /* ResumeVC.xib */,
-				946866EB27F08512005DDE17 /* VacanciesVC.xib */,
-				946866EC27F08512005DDE17 /* VacanciesDesVC.xib */,
 				946866DA27F084FF005DDE17 /* ProfileVC.xib */,
 				946866D927F084FF005DDE17 /* EditVC.xib */,
 			);
@@ -260,9 +258,11 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		94F1B4F527F0F21C00D1148C /* Employee */ = {
+		94ABC52D2811088D009A51AD /* Employee */ = {
 			isa = PBXGroup;
 			children = (
+				946866EB27F08512005DDE17 /* VacanciesVC.xib */,
+				946866EC27F08512005DDE17 /* VacanciesDesVC.xib */,
 			);
 			path = Employee;
 			sourceTree = "<group>";

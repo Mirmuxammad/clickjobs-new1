@@ -50,7 +50,8 @@ class AddVacancyVC: UIViewController {
     
     @IBAction func createBtnTappted(_ sender: Any) {
         if let token = Cache.share.getUserToken() {
-            let newV = Vacancy(userId: token, infoUrl: urlField.text!, salary: "💸 \(self.salaryField.text!)", title: self.titleField.text!, workAddress: "📍 \(self.workAddressField.text!)", category: self.lastCategory, subcategory: self.lastSubcategory, companyName: "🏢 \(self.companyNameField.text!)")
+            let newV = Vacancy(userId: token, infoUrl: urlField.text!, salary: "💸 \(self.salaryField.text!)", title: self.titleField.text!, workAddress: "📍 \(self.workAddressField.text!)", category: self.lastCategory, subcategory: self.lastSubcategory, companyName: "🏢 \(self.companyNameField.text!)", phone: "+998917792221")
+            
             Fire.shared.addVacancy(vac: newV) { done in
                 self.alerVcSetup()
             }

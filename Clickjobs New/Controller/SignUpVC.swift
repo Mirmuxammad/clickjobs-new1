@@ -38,7 +38,7 @@ class SignUpVC: UIViewController {
     
     @IBAction func loginBtnPressed(_ sender: Any) {
         if usernameTxtFld.text!.count > 4 && passwordTxtFld.text!.count > 5 {
-            Fire.shared.isUserExist(login: usernameTxtFld.text!, password: passwordTxtFld.text!) { done in
+            Fire.shared.isUserExist(login: usernameTxtFld.text!, password: passwordTxtFld.text!, isEmployer: self.isEmployer) { done in
                 if done {
                     if self.isEmployer {
                         let vc = EmployerMainTBC()

@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VacanciesDesVC" customModule="Clickjobs_New" customModuleProvider="target">
             <connections>
+                <outlet property="saveBtn" destination="tzI-27-Lgo" id="o5x-Xj-ICJ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="webView" destination="O8h-a8-DfF" id="Yy6-yY-BJW"/>
             </connections>
@@ -28,7 +29,7 @@
                     </wkWebViewConfiguration>
                 </wkWebView>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CBD-tt-GmD">
-                    <rect key="frame" x="16" y="782" width="382" height="48"/>
+                    <rect key="frame" x="16" y="798" width="382" height="48"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tzI-27-Lgo">
                             <rect key="frame" x="0.0" y="0.0" width="186" height="48"/>
@@ -74,7 +75,7 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="CBD-tt-GmD" secondAttribute="bottom" constant="32" id="6lb-No-sXm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="CBD-tt-GmD" secondAttribute="bottom" constant="16" id="6lb-No-sXm"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="O8h-a8-DfF" secondAttribute="bottom" id="A8v-mt-1rJ"/>
                 <constraint firstItem="O8h-a8-DfF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="MBh-vR-cen"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="O8h-a8-DfF" secondAttribute="trailing" id="ZSw-az-tDq"/>

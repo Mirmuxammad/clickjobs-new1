@@ -9,6 +9,7 @@ import Foundation
 
 struct Vacancy {
     
+    var id: String = ""
     var userId: String
     var infoUrl: String
     var salary: String
@@ -17,6 +18,7 @@ struct Vacancy {
     var category: String
     var subcategory: String
     var companyName: String
+    var phone: String
     
     
     
@@ -29,7 +31,8 @@ struct Vacancy {
             "workAddress":workAddress,
             "category":category,
             "subcategory":subcategory,
-            "companyName":companyName
+            "companyName":companyName,
+            "phone":phone
         ]
     }
     

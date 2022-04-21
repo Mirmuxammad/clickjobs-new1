@@ -20,7 +20,7 @@ class Fire {
         
         Loader.start()
         
-        self.isUserExist(login: data.login, password: data.password, withLoader: false) { isUserExist in
+        self.isUserExist(login: data.login, password: data.password, isEmployer: data.isEmployer, withLoader: false) { isUserExist in
             if isUserExist {
                 print("User already exists")
                 createdUser(nil)
@@ -53,13 +53,13 @@ class Fire {
     
     
     ///DONE
-    func isUserExist(login: String, password: String, withLoader: Bool = true, completion: @escaping (Bool) -> Void) {
+    func isUserExist(login: String, password: String, isEmployer: Bool, withLoader: Bool = true, completion: @escaping (Bool) -> Void) {
         let users = db.collection("user")
         
         if withLoader {Loader.start()}
 
         // Create a query against the collection.
-        let _ = users.whereField("login", isEqualTo: login).whereField("password", isEqualTo: password).getDocuments { snapshot, error in
+        let _ = users.whereField("login", isEqualTo: login).whereField("password", isEqualTo: password).whereField("isEmployer", isEqualTo: isEmployer).getDocuments { snapshot, error in
             
             if withLoader {Loader.stop()}
             
@@ -95,7 +95,7 @@ class Fire {
                 Loader.stop()
                 if let snap = snapshot {
                     if let doc1 = snap.data() {
-                        let newUser = User.init(dictionaryData: doc1)
+                        let newUser = User.init(dictionaryData: doc1, docId: snap.documentID)
                         user(newUser)
                     } else {
                         user(nil)
@@ -146,6 +146,135 @@ class Fire {
     
     
     
+    func updateUserPassword(newPassword: String, completion: @escaping (Bool)->Void) {
+        
+        if let token = Cache.share.getUserToken() {
+            Loader.start()
+            let users = db.collection("user").document(token)
+            
+            users.getDocument { snapshot, error in
+                Loader.stop()
+                if let snap = snapshot {
+                    let ref = snap.reference
+                    ref.updateData([
+                            "password":newPassword
+                    ])
+                    completion(true)
+                        
+                    
+                } else {
+                    completion(false)
+                }
+            }
+            
+        } else {
+            completion(false)
+        }
+
+    }
+    
+    func checkVacancyInSaved(id: String, completion: @escaping (Bool)->Void) {
+        
+        if let token = Cache.share.getUserToken() {
+            Loader.start()
+            let users = db.collection("user").document(token)
+            
+            users.getDocument { snapshot, error in
+                Loader.stop()
+                if let snap = snapshot {
+                    let user = User.init(dictionaryData: snap.data() ?? [:], docId: snap.documentID)
+                    
+                    if user.savedVacancies.contains(id) {
+                        completion(true)
+                    } else {
+                        completion(false)
+                    }
+                    
+                    
+                } else {
+                    completion(false)
+                }
+            }
+            
+        } else {
+            completion(false)
+        }
+
+    }
+
+    
+    func addVacancyToSaved(id: String, completion: @escaping (Bool)->Void) {
+        
+        if let token = Cache.share.getUserToken() {
+            Loader.start()
+            let users = db.collection("user").document(token)
+            
+            users.getDocument { snapshot, error in
+                Loader.stop()
+                if let snap = snapshot {
+                    let user = User.init(dictionaryData: snap.data() ?? [:], docId: snap.documentID)
+                    let ref = snap.reference
+                    
+                    var vacancies = user.savedVacancies
+                    vacancies.append(id)
+                    
+                    ref.updateData([
+                            "savedVacancies":vacancies
+                    ])
+                    completion(true)
+
+                    
+                } else {
+                    completion(false)
+                }
+            }
+            
+        } else {
+            completion(false)
+        }
+
+    }
+
+    func removeVacancyFromSaved(id: String, completion: @escaping (Bool)->Void) {
+        
+        if let token = Cache.share.getUserToken() {
+            Loader.start()
+            let users = db.collection("user").document(token)
+            
+            users.getDocument { snapshot, error in
+                Loader.stop()
+                if let snap = snapshot {
+                    let user = User.init(dictionaryData: snap.data() ?? [:], docId: snap.documentID)
+                    let ref = snap.reference
+                    
+                    var vacancies = user.savedVacancies
+                    
+                    for i in vacancies.enumerated() {
+                        if i.element == id {
+                            vacancies.remove(at: i.offset)
+                            break
+                        }
+                    }
+                    
+                    
+                    ref.updateData([
+                            "savedVacancies":vacancies
+                    ])
+                    completion(true)
+
+                    
+                } else {
+                    completion(false)
+                }
+            }
+            
+        } else {
+            completion(false)
+        }
+
+    }
+
+    
     func addVacancy(vac: Vacancy, done: @escaping (Bool) -> Void) {
         
         var ref: DocumentReference? = nil
@@ -179,7 +308,7 @@ class Fire {
                 
                 for doc in snapshot!.documents {
                     let doc1 = doc.data() as! [String:String]
-                    let v = Vacancy.init(userId: doc1["userId"]!, infoUrl: doc1["infoUrl"]!, salary: doc1["salary"]!, title: doc1["title"]!, workAddress: doc1["workAddress"]!, category: doc1["category"]!, subcategory: doc1["subcategory"]!, companyName: doc1["companyName"]!)
+                    let v = Vacancy.init(userId: doc1["userId"]!, infoUrl: doc1["infoUrl"]!, salary: doc1["salary"]!, title: doc1["title"]!, workAddress: doc1["workAddress"]!, category: doc1["category"]!, subcategory: doc1["subcategory"]!, companyName: doc1["companyName"]!, phone: doc1["phone"] ?? "")
                     vacs.append(v)
                 }
                 newVacs(vacs)

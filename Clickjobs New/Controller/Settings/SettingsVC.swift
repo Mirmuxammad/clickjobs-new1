@@ -72,10 +72,14 @@ class SettingsVC: UIViewController {
 extension SettingsVC {
     func alerVcSetup() {
         
-        let alert = UIAlertController(title: "Log out", message: "When you log out, your data will not be deleted.", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Log out", message: "When you log out, your data will be deleted from your device.", preferredStyle: .alert)
 
         alert.addAction(UIAlertAction(title: "Log out", style: .destructive, handler: { (_) in
-            self.navigationController?.popToRootViewController(animated: true)
+            let walk = WalkVC(nibName: "WalkVC", bundle: nil)
+            let vc = UINavigationController(rootViewController: walk)
+            vc.modalPresentationStyle = .fullScreen
+            Cache.share.logoutCleanUp()
+            self.present(vc, animated: true)
         }))
 
         alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: { (_) in

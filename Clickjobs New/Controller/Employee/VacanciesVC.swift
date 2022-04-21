@@ -64,8 +64,14 @@ extension VacanciesVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = VacanciesDesVC(nibName: "VacanciesDesVC", bundle: nil)
-        vc.urlString = vacancies[indexPath.row].infoUrl
+        guard let url = URL(string: vacancies[indexPath.row].infoUrl) else {
+            Alert.showAlert(forState: .warning, message: "This Vacancy has no extra details")
+            return
+        }
+        
+        vc.url = url
         vc.category = vacancies[indexPath.row].category
+        vc.vacancy = vacancies[indexPath.row]
         vc.hidesBottomBarWhenPushed = true
         self.navigationController?.pushViewController(vc, animated: true)
         vc.hidesBottomBarWhenPushed = false
