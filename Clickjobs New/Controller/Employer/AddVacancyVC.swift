@@ -36,16 +36,16 @@ class AddVacancyVC: UIViewController {
     
     @IBAction func categoryPressed(_ sender: Any) {
         
-        let vc = JobCategoryVC.init(nibName: "JobCategoryVC", bundle: nil)
-        vc.delegate = self
-        navigationController?.pushViewController(vc, animated: true)
-        
+//        let vc = JobCategoryVC.init(nibName: "JobCategoryVC", bundle: nil)
+//        vc.delegate = self
+//        navigationController?.pushViewController(vc, animated: true)
+//        
     }
     
     @IBAction func subCategoryPressed(_ sender: Any) {
-        let vc = SubCategoryVC.init(nibName: "SubCategoryVC", bundle: nil)
-        vc.delegate = self
-        navigationController?.pushViewController(vc, animated: true)
+//        let vc = SubCategoryVC.init(nibName: "SubCategoryVC", bundle: nil)
+//        vc.delegate = self
+//        navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func createBtnTappted(_ sender: Any) {
@@ -83,18 +83,18 @@ class AddVacancyVC: UIViewController {
     
     }
 
-//MARK: Calling protocol
-extension AddVacancyVC: JobCategoryVCDelegate {
-    func jobcategoryTapped(choseJob: JobCategory) {
-        self.jobCategoryBtn.setTitle(choseJob.jobType, for: .normal)
-    }
-}
-
-extension AddVacancyVC: SubCategoryVCDelegate {
-    func jobcategoryTapped(choseJob: Techlogy) {
-        self.jobSubCategoryBtn.setTitle(choseJob.techname, for: .normal)
-    }
-}
+////MARK: Calling protocol
+//extension AddVacancyVC: JobCategoryVCDelegate {
+//    func jobcategoryTapped(choseJob: JobCategory) {
+//        self.jobCategoryBtn.setTitle(choseJob.jobType, for: .normal)
+//    }
+//}
+//
+//extension AddVacancyVC: SubCategoryVCDelegate {
+//    func jobcategoryTapped(choseJob: Techlogy) {
+//        self.jobSubCategoryBtn.setTitle(choseJob.techname, for: .normal)
+//    }
+//}
 
 //MARK: Aler vc Setup
 extension AddVacancyVC {

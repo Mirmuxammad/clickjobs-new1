@@ -61,7 +61,7 @@ class SignInVC: UIViewController {
         UserDefaults.standard.set(true, forKey: "status")
               
 
-        let user = User(id: "", firstName: firstNameField.text!, lastName: lastNameField.text!, phone: phoneField.text!, email: emailField.text!, tgUsername: tgField.text!, isOccupied: !occupied, resumeUrl: "", savedVacancies: [], login: loginField.text!, password: passwordField.text!, companyID: companyNameField.text!, isEmployer: self.isEmployer)
+        let user = User(id: "", firstName: firstNameField.text!, lastName: lastNameField.text!, phone: phoneField.text!, email: emailField.text!, tgUsername: tgField.text!, isOccupied: !occupied, resumeUrl: "", savedVacancies: [], login: loginField.text!, password: passwordField.text!, companyID: companyNameField.text!, isEmployer: self.isEmployer, address: self.addressField.text!)
         
         Fire.shared.registerUser(data: user) { newUser in
             if let newUser = newUser {
@@ -71,6 +71,7 @@ class SignInVC: UIViewController {
                     vc.modalPresentationStyle = .fullScreen
                     self.present(vc, animated: true)
                 } else {
+                    //EMPLOYEE
                     let vc = EmployeeMainTBC()
                     vc.modalPresentationStyle = .fullScreen
                     self.present(vc, animated: true)
@@ -114,7 +115,7 @@ extension SignInVC: UIPickerViewDelegate, UIPickerViewDataSource {
 extension SignInVC {
     
     func setNavigation() {
-        
+        navigationItem.hidesBackButton = false
         navigationController?.navigationBar.tintColor = .btnRed
         navigationController?.navigationBar.barTintColor = .defaultGray
         self.title = "Sign up"

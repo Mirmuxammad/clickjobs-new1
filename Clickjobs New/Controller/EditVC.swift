@@ -8,24 +8,19 @@
 import UIKit
 import SSNeumorphicView
 
-struct PersonInfos {
-    var fullname : String
-    var city: String
-    var compyany: String
-    var email: String?
-    var phone: String
-}
+
 
 protocol EditVCDelegate {
-    func editInformation(newInfo: PersonInfos)
+    func editInformationDone()
 }
 
 class EditVC: UIViewController {
     
     
     @IBOutlet weak var conteinerView: UIView!
-    
-    @IBOutlet weak var fullnameTF: GeneralTextField!
+    @IBOutlet weak var firstNameTF: GeneralTextField!
+    @IBOutlet weak var lastNameTF: GeneralTextField!
+
     @IBOutlet weak var cityTF: GeneralTextField!
     @IBOutlet weak var companyTF: GeneralTextField!
     @IBOutlet weak var emailTF: GeneralTextField!
@@ -38,10 +33,13 @@ class EditVC: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var saveBtn: UIButton!
     
-    var delegate : EditVCDelegate!
+    var delegate: EditVCDelegate!
+    var user: User!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-       otherSetups()
+        otherSetups()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -58,21 +56,25 @@ class EditVC: UIViewController {
         self.view.backgroundColor = .defaultGray
         conteinerView.backgroundColor = .defaultGray
         saveBtn.backgroundColor = .btnRed
+        self.firstNameTF.text = user.firstName
+        self.lastNameTF.text = user.lastName
+        self.phoneTF.text = user.phone
+        self.emailTF.text = user.email
+        self.companyTF.text = user.companyID
+        self.cityTF.text = user.address
+        
     }
     
 
     @IBAction func saveBtnTapped(_ sender: Any) {
-        if fullnameTF.text?.isEmpty == false && cityTF.text?.isEmpty == false && phoneTF.text?.isEmpty == false &&  companyTF.text?.isEmpty == false {
-            
-            delegate?.editInformation(newInfo:
-                                        PersonInfos(
-                                                    fullname: fullnameTF.text!,
-                                                    city: cityTF.text!,
-                                                    compyany: companyTF.text!,
-                                                    email: emailTF.text!,
-                                                    phone: phoneTF.text!)
-                                                    )
-            navigationController?.popViewController(animated: true)
+        if !firstNameTF.text!.isEmpty && !cityTF.text!.isEmpty && !phoneTF.text!.isEmpty &&  !companyTF.text!.isEmpty {
+            Fire.shared.updateUserData(firstName: firstNameTF.text!, lastName: lastNameTF.text!, phone: phoneTF.text!, email: emailTF.text!, company: companyTF.text!, address: cityTF.text!) { done in
+                if done {
+                    self.delegate.editInformationDone()
+                    self.navigationController?.popViewController(animated: true)
+
+                }
+            }
             
         }
     }

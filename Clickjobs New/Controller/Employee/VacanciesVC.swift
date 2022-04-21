@@ -43,8 +43,8 @@ class VacanciesVC: UIViewController {
     }
     
     @objc func belltapped(sender: UIBarButtonItem) {
-        let vc = BellVC.init(nibName: "BellVC", bundle: nil)
-        navigationController?.pushViewController(vc, animated: true)
+//        let vc = BellVC.init(nibName: "BellVC", bundle: nil)
+//        navigationController?.pushViewController(vc, animated: true)
     }
 
 }

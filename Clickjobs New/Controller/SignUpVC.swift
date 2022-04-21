@@ -21,6 +21,7 @@ class SignUpVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setNavBar()
+
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -59,8 +60,9 @@ class SignUpVC: UIViewController {
     
     
     func setNavBar() {
-        navigationController?.navigationBar.tintColor = .clear
+        navigationController?.navigationBar.tintColor = .btnRed
         navigationController?.navigationBar.barTintColor = .defaultGray
+        navigationItem.hidesBackButton = false
     }
     
 }

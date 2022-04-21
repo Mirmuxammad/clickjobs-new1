@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -14,7 +14,8 @@
                 <outlet property="companyTF" destination="cR8-pD-uVJ" id="mLf-DJ-Fwy"/>
                 <outlet property="conteinerView" destination="Qx9-0J-big" id="CIc-8H-tIf"/>
                 <outlet property="emailTF" destination="q8t-u6-KXk" id="6v0-WI-KHB"/>
-                <outlet property="fullnameTF" destination="tpL-Ha-Bsd" id="wIV-qB-wgI"/>
+                <outlet property="firstNameTF" destination="tpL-Ha-Bsd" id="ZOj-AS-frV"/>
+                <outlet property="lastNameTF" destination="DUz-DQ-zjW" id="hsV-n2-bPf"/>
                 <outlet property="phoneTF" destination="Vpz-w1-Kpp" id="Upj-kg-jwB"/>
                 <outlet property="saveBtn" destination="de1-TS-rCA" id="JAW-F5-AyF"/>
                 <outlet property="scrollView" destination="AW1-17-1il" id="nNP-t0-e4g"/>
@@ -36,12 +37,12 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="1063.5"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="suf-50-cfB">
-                                            <rect key="frame" x="16" y="32" width="382" height="388"/>
+                                            <rect key="frame" x="16" y="32" width="382" height="464"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="UAP-ej-c1q">
-                                                    <rect key="frame" x="0.0" y="16" width="382" height="356"/>
+                                                    <rect key="frame" x="0.0" y="16" width="382" height="432"/>
                                                     <subviews>
-                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Full name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tpL-Ha-Bsd" customClass="GeneralTextField" customModule="Clickjobs_New" customModuleProvider="target">
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tpL-Ha-Bsd" customClass="GeneralTextField" customModule="Clickjobs_New" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="0.0" width="382" height="52"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="52" id="ADQ-St-XqS"/>
@@ -49,23 +50,28 @@
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>
                                                         </textField>
-                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="+998 (99) 999 99 99" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vpz-w1-Kpp" customClass="GeneralTextField" customModule="Clickjobs_New" customModuleProvider="target">
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DUz-DQ-zjW" customClass="GeneralTextField" customModule="Clickjobs_New" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="76" width="382" height="52"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="+998 (99) 999 99 99" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vpz-w1-Kpp" customClass="GeneralTextField" customModule="Clickjobs_New" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="152" width="382" height="52"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
                                                         </textField>
                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Clickjob@gmail.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q8t-u6-KXk" customClass="GeneralTextField" customModule="Clickjobs_New" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="152" width="382" height="52"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                            <textInputTraits key="textInputTraits"/>
-                                                        </textField>
-                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nike inc" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cR8-pD-uVJ" customClass="GeneralTextField" customModule="Clickjobs_New" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="228" width="382" height="52"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>
                                                         </textField>
-                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tashkent" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dnb-w3-2vi" customClass="GeneralTextField" customModule="Clickjobs_New" customModuleProvider="target">
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nike inc" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cR8-pD-uVJ" customClass="GeneralTextField" customModule="Clickjobs_New" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="304" width="382" height="52"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tashkent" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dnb-w3-2vi" customClass="GeneralTextField" customModule="Clickjobs_New" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="380" width="382" height="52"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>
                                                         </textField>
@@ -81,7 +87,7 @@
                                             </constraints>
                                         </view>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="de1-TS-rCA">
-                                            <rect key="frame" x="16" y="452" width="382" height="52"/>
+                                            <rect key="frame" x="16" y="528" width="382" height="52"/>
                                             <color key="backgroundColor" red="0.18039217590000001" green="0.34117650989999998" blue="0.91372549530000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="52" id="NYm-X7-Aqa"/>

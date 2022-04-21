@@ -12,8 +12,6 @@ class ProfileVC: UIViewController {
     @IBOutlet weak var continerView: UIView!
     @IBOutlet var outerViews: [SSNeumorphicView]!
     
-    @IBOutlet weak var savedCountLbl: UILabel!
-    @IBOutlet weak var vacanciesCountlbl: UILabel!
    
     @IBOutlet var lebels: [UILabel]!
     
@@ -29,10 +27,15 @@ class ProfileVC: UIViewController {
     @IBOutlet weak var emailView: SSNeumorphicView!
     @IBOutlet weak var locationView: SSNeumorphicView!
         
-    @IBOutlet weak var vacanView: SSNeumorphicView!
-    @IBOutlet weak var savedView: SSNeumorphicView!
     
-    @IBOutlet var btnViews: [SSNeumorphicView]!
+    
+    
+    var currentUser: User? {
+        didSet {
+            self.updateUserData()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -40,16 +43,34 @@ class ProfileVC: UIViewController {
         backButtonSetup()
         viewsSetup()
         lblsSetup()
+        
+        Fire.shared.getCurrentUserDetails { user in
+            if let user = user {
+                self.currentUser = user
+            }
+        }
+        
        
     }
+    
+    func updateUserData() {
+        guard let user = currentUser else {return}
+        self.fullNameLbl.text = "\(user.firstName) \(user.lastName)"
+        self.emailLbl.text = user.email
+        self.numberLbl.text = user.phone
+        self.locationLbl.text = user.address
+        
+        
+    }
 
+    
+    
     func lblsSetup() {
         for i in lebels {
             i.textColor = .lblBlack
         }
         editBtn.tintColor = .btnRed
     }
-    
     func viewsSetup() {
         for i in outerViews {
             i.viewDepthType = .outerShadow
@@ -58,16 +79,11 @@ class ProfileVC: UIViewController {
             i.viewNeumorphicShadowOffset = .init(width: 2, height: 2)
             i.viewNeumorphicMainColor = UIColor(named: "defaultGray")?.cgColor
         }
-        for i in btnViews {
-            i.viewDepthType = .outerShadow
-            i.viewNeumorphicCornerRadius = 13
-            i.viewNeumorphicShadowRadius = 0
-            i.viewNeumorphicShadowOffset = .init(width: 2, height: 2)
-            i.viewNeumorphicMainColor = UIColor(named: "defaultGray")?.cgColor
-        }
+
         
         continerView.backgroundColor = .defaultGray
     }
+    
     
     func backButtonSetup() {
         navigationItem.backButtonTitle = "Back"
@@ -96,8 +112,13 @@ class ProfileVC: UIViewController {
     }
     
     @IBAction func editBtnTapped(_ sender: Any) {
+        guard let currentUser = currentUser else {
+            return
+        }
+
         let vc = EditVC.init(nibName: "EditVC", bundle: nil)
         vc.delegate = self
+        vc.user = currentUser
         navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -120,11 +141,12 @@ class ProfileVC: UIViewController {
 
 //MARK: calling Protocol
 extension ProfileVC: EditVCDelegate {
-    func editInformation(newInfo: PersonInfos) {
-        fullNameLbl.text = newInfo.fullname
-        locationLbl.text = newInfo.city
-        emailLbl.text = newInfo.email
-        numberLbl.text = newInfo.phone
+    func editInformationDone() {
+        Fire.shared.getCurrentUserDetails { user in
+            if let user = user {
+                self.currentUser = user
+            }
+        }
     }
 }
 

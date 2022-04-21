@@ -86,6 +86,65 @@ class Fire {
     }
     
     
+    func getCurrentUserDetails(user: @escaping (User?)->Void) {
+        
+        if let token = Cache.share.getUserToken() {
+            Loader.start()
+            let users = db.collection("user").document(token)
+            users.getDocument { snapshot, error in
+                Loader.stop()
+                if let snap = snapshot {
+                    if let doc1 = snap.data() {
+                        let newUser = User.init(dictionaryData: doc1)
+                        user(newUser)
+                    } else {
+                        user(nil)
+                    }
+                    
+                } else {
+                    user(nil)
+                }
+            }
+            
+        } else {
+            user(nil)
+        }
+
+    }
+    
+    func updateUserData(firstName: String, lastName: String, phone: String, email: String, company: String, address: String, completion: @escaping (Bool)->Void) {
+        
+        if let token = Cache.share.getUserToken() {
+            Loader.start()
+            let users = db.collection("user").document(token)
+            
+            users.getDocument { snapshot, error in
+                Loader.stop()
+                if let snap = snapshot {
+                    let ref = snap.reference
+                    ref.updateData([
+                            "firstName":firstName,
+                            "lastName":lastName,
+                            "phone":phone,
+                            "email":email,
+                            "address":address,
+                            "companyID":company
+                    ])
+                    completion(true)
+                        
+                    
+                } else {
+                    completion(false)
+                }
+            }
+            
+        } else {
+            completion(false)
+        }
+
+    }
+    
+    
     
     func addVacancy(vac: Vacancy, done: @escaping (Bool) -> Void) {
         
